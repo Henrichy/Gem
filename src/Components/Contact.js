@@ -4,12 +4,14 @@ import Success from './Success';
 import Note from "../Assets/memo.png";
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import errorImage from "../Assets/errorImage.png";
+import fail from "../Assets/failed.png";
 import axios from 'axios';
+import Failed from "./Failed";
 
 
 const Contact = () => {
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+    const [isFailedOpen, setIsFailedOpen] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -87,7 +89,7 @@ const Contact = () => {
                     borderBottom: "1px solid #8D8D8D"
                 }} type="text" placeholder='Write your message..' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
 
-                {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>}
+                {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
                 <input type="submit" value="Send Message " />
             </form>
             <Success isOpen={isSuccessOpen} onClose={
@@ -111,7 +113,28 @@ const Contact = () => {
                     }
                 }>close this window</button>
             </Success>
-        </div>
+
+            <Failed isOpen={isFailedOpen} onClose={
+                () => {
+                    setIsFailedOpen(!isFailedOpen)
+                    window.location.reload(false)
+                    window.scrollTo(0, 0);
+                }
+            }>
+                <img src={fail} className='memo' alt="notepad"></img>
+                <h3 className='over-head'>Request Failed</h3>
+                <p className='overlay-body'>
+                    {errorMessage}
+                </p>
+                <button className='career-red' onClick={
+                    () => {
+                        setIsFailedOpen(!isFailedOpen)
+                        window.location.reload(false)
+                        window.scrollTo(0, 0);
+                    }
+                }>close this window</button>
+            </Failed>
+        </div >
     )
 }
 

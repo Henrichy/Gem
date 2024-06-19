@@ -455,6 +455,22 @@ input[type=submit] {
 }
 
 
+.career-red {
+  margin-top: 0.8rem;
+  background-color: #862424;
+  border-style: none;
+  height: auto;
+  color: #ffffff;
+  font-size: 1rem;
+  width: auto;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+
 input[type=text].active {
   border: 0px solid #E0E0E0;
 }

@@ -7,11 +7,13 @@ import eyeclosed from '../Assets/eyeclosed.png';
 import { saveSessionData } from './helpers/SessionHelper';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
+import Failed from './Failed';
+import fail from "../Assets/failed.png";
 
 
 const Login = () => {
     const [passwordVisible, setPasswordVisible] = useState(false);
+    const [isFailedOpen, setIsFailedOpen] = useState(false);
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [email, setEmail] = useState('');
@@ -57,6 +59,7 @@ const Login = () => {
             console.error(err.response.data.message);
             // alert(rat);
             setErrorMessage(err.response.data.message)
+            setIsFailedOpen(true);
         });
     };
 
@@ -75,12 +78,32 @@ const Login = () => {
                         <img src={passwordVisible ? eyeclosed : eyeopen} alt="" onClick={togglePasswordVisibility} />
                     </div>
 
-                    {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>}
+                    {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
 
                     <h5 className='loga-head'>Forgot password?</h5>
 
                     <input type="submit" value="Sign In" />
                 </form>
+                <Failed isOpen={isFailedOpen} onClose={
+                    () => {
+                        setIsFailedOpen(!isFailedOpen)
+                        window.location.reload(false)
+                        window.scrollTo(0, 0);
+                    }
+                }>
+                    <img src={fail} className='memo' alt="notepad"></img>
+                    <h3 className='over-head'>Request Failed</h3>
+                    <p className='overlay-body'>
+                        {errorMessage}
+                    </p>
+                    <button className='career-red' onClick={
+                        () => {
+                            setIsFailedOpen(!isFailedOpen)
+                            window.location.reload(false)
+                            window.scrollTo(0, 0);
+                        }
+                    }>close this window</button>
+                </Failed>
             </div>
             <Footer />
 
