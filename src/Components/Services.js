@@ -17,16 +17,18 @@ const Services = () => {
                 <h2>Our products and services are designed to help you meet your business needs</h2>
             </div>
 
-            <div className='service-slider'>
-                <Link to="/services" element={<Service />} className="service-link">
-                    <motion.div whileHover={{ scale: 1.12 }} transition={{
-                        y: { type: "spring", stiffness: 60 },
-                        opacity: { duration: 1 },
-                        ease: "easeIn",
-                        delay: 0.04,
-                        duration: 0.5
-                    }} className='service-one'>
-                        <div className='with-blur-backdrops'>
+            <div className='service-row'>
+                <div className='service-slider'>
+                    <div className='service-rows'>
+
+                        <motion.div whileHover={{ scale: 1.04 }} transition={{
+                            y: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 1 },
+                            ease: "easeIn",
+                            delay: 0.04,
+                            duration: 0.5
+                        }} className='service-one'>
+
                             <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{
                                 opacity: 1,
                                 y: 0
@@ -42,18 +44,16 @@ const Services = () => {
                                 <li>API SMS Gateway</li>
                                 <li>USSD Gateway</li>
                             </ul>
-                        </div>
-                    </motion.div>
-                </Link>
-                <Link to="/services" element={<Service />} className="service-link">
-                    <motion.div whileHover={{ scale: 1.12 }} transition={{
-                        y: { type: "spring", stiffness: 60 },
-                        opacity: { duration: 1 },
-                        ease: "easeIn",
-                        delay: 0.04,
-                        duration: 0.5
-                    }} className='service-two'>
-                        <div className='with-blur-backdrops'>
+
+                        </motion.div>
+
+                        <motion.div whileHover={{ scale: 1.04 }} transition={{
+                            y: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 1 },
+                            ease: "easeIn",
+                            delay: 0.04,
+                            duration: 0.5
+                        }} className='service-two'>
                             <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{
                                 opacity: 1,
                                 y: 0
@@ -71,37 +71,54 @@ const Services = () => {
                                 <li>Interactive voice response</li>
                                 <li>USSD or Short code services</li>
                             </ul>
-                        </div>
-                    </motion.div>
-                </Link>
-                <Link to="/services" element={<Service />} className="service-link">
-                    <motion.div whileHover={{ scale: 1.12 }} transition={{
+
+                        </motion.div>
+
+                    </div>
+
+
+                    <motion.div whileHover={{ scale: 1.04 }} transition={{
                         y: { type: "spring", stiffness: 60 },
                         opacity: { duration: 1 },
                         ease: "easeIn",
                         delay: 0.04,
                         duration: 0.5
                     }} className='service-three'>
-                        <div className='with-blur-backdrops'>
-                            <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{
-                                opacity: 1,
-                                y: 0
-                            }} transition={{
-                                y: { type: "spring", stiffness: 60 },
-                                opacity: { duration: 1 },
-                                ease: "easeIn",
-                                delay: 0.8,
-                                duration: 0.5
-                            }}>Telecom Consulting</motion.h3>
-                            <ul className='service-list'>
-                                <li>Strategy development</li>
-                                <li>Infrastructure optimization</li>
-                                <li>Strategic partnership</li>
-                                <li>VAS business model design</li>
-                            </ul>
-                        </div>
+
+                        <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{
+                            opacity: 1,
+                            y: 0
+                        }} transition={{
+                            y: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 1 },
+                            ease: "easeIn",
+                            delay: 0.8,
+                            duration: 0.5
+                        }}>Telecom Consulting</motion.h3>
+                        <ul className='service-list'>
+                            <li>Strategy development</li>
+                            <li>Infrastructure optimization</li>
+                            <li>Strategic partnership</li>
+                            <li>VAS business model design</li>
+                        </ul>
+
                     </motion.div>
-                </Link>
+
+                </div>
+
+                <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{
+                    opacity: 1,
+                    x: 0
+                }} whileHover={{ scale: 1.04 }}
+                    transition={{
+                        x: { type: "spring", stiffness: 60 },
+                        opacity: { duration: 1 },
+                        ease: "easeIn",
+                        delay: .025,
+                        duration: 0.35
+                    }} className='service-image'>
+
+                </motion.div>
             </div>
 
             <div className='choose-page'>
@@ -117,8 +134,10 @@ const Services = () => {
                         duration: 0.5
                     }}>Why Choose Us</motion.h2>
                     <p>
-                        we provide efficient and reliable VAS aggregator service. We focus on helping our clients, leverage technology and meet business challenges and meet strategic goals . <br /><br />
-                        We rely on partnerships and industry knowledge to provide our clients with pragmatic solutions and comprehensive analysis.
+                        We don't just offer bulk SMS, we are experts in it. Our connections with multiple carriers ensure industry-leading delivery rates, guaranteeing your messages reach the right inboxes
+
+                        <br /><br />
+                        Navigating SMS marketing regulations can be complex. We provide expert guidance to ensure your campaigns are compliant, while our dedicated support team is always there to answer your questions.
                     </p>
 
                     <Link to="/contact-us" element={<Contacts />} style={{ textDecoration: "none" }}>
@@ -145,7 +164,7 @@ const Services = () => {
                             ease: "easeIn",
                             delay: 0.8,
                             duration: 0.5
-                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Quality Assurance</motion.li>
+                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Bulk SMS Expertise & High Deliverability Rates</motion.li>
                         <motion.li initial={{ y: -100, opacity: 0 }} whileInView={{
                             opacity: 1,
                             y: 0
@@ -155,7 +174,7 @@ const Services = () => {
                             ease: "easeIn",
                             delay: 0.8,
                             duration: 0.5
-                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Technical Support</motion.li>
+                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Compliance & Support You Can Trust</motion.li>
                         <motion.li initial={{ y: -100, opacity: 0 }} whileInView={{
                             opacity: 1,
                             y: 0
@@ -165,7 +184,7 @@ const Services = () => {
                             ease: "easeIn",
                             delay: 0.8,
                             duration: 0.5
-                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Standard Delivery</motion.li>
+                        }}> <IoMdCheckmarkCircleOutline className='check-mark' />Measurable Results & Campaign Optimization</motion.li>
                     </ul>
                 </div>
             </div>
@@ -177,8 +196,8 @@ const Services = () => {
                     ease: "easeIn",
                     delay: 0.08,
                     duration: 0.5
-                }}>We Have Expert Team</motion.h2>
-                <p>Meet our expert management team members in technology and consulting areas.</p>
+                }}>Meet The Team</motion.h2>
+                <p>A team of passionate problem-solvers who think outside the box to provide the best services to our clients.</p>
                 <div className='expert-slider'>
                     <motion.div whileHover={{ scale: 1.05 }} transition={{
                         y: { type: "spring", stiffness: 60 },
@@ -190,27 +209,13 @@ const Services = () => {
                         <div className='expert-image-one'>
                         </div>
                         <div className='expert-info'>
-                            <div className='expert-content'>
-                                <h3>Dr Femi Olumodeji</h3>
-                                <h5>CEO</h5>
-                            </div>
-                            <div className='expert-contact'>
-                                <IoLogoLinkedin style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <BsTwitterX style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <IoLogoFacebook style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                            </div>
+                            <h3>Olufemi Olumodeji</h3>
+                            <h5>Co-founder & CEO</h5>
+                            <IoLogoLinkedin style={{
+                                fontSize: "2.5rem",
+                                color: "#244886",
+                                cursor: "pointer"
+                            }} />
                         </div>
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.05 }} transition={{
@@ -223,27 +228,13 @@ const Services = () => {
                         <div className='expert-image-two'>
                         </div>
                         <div className='expert-info'>
-                            <div className='expert-content'>
-                                <h3>Dr Fidel Abowei</h3>
-                                <h5>COO</h5>
-                            </div>
-                            <div className='expert-contact'>
-                                <IoLogoLinkedin style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <BsTwitterX style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <IoLogoFacebook style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                            </div>
+                            <h3>Fidel Abowei</h3>
+                            <h5>COO</h5>
+                            <IoLogoLinkedin style={{
+                                fontSize: "2.5rem",
+                                color: "#244886",
+                                cursor: "pointer"
+                            }} />
                         </div>
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.05 }} transition={{
@@ -256,27 +247,14 @@ const Services = () => {
                         <div className='expert-image-three'>
                         </div>
                         <div className='expert-info'>
-                            <div className='expert-content'>
-                                <h3>Victory Ikuomola</h3>
-                                <h5>Tech Lead</h5>
-                            </div>
-                            <div className='expert-contact'>
-                                <IoLogoLinkedin style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <BsTwitterX style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                                <IoLogoFacebook style={{
-                                    fontSize: "2.5rem",
-                                    color: "#244886", marginRight: "0.5rem",
-                                    cursor: "pointer"
-                                }} />
-                            </div>
+                            <h3>Victory Ikuomola</h3>
+                            <h5>Tech Lead</h5>
+
+                            <IoLogoLinkedin style={{
+                                fontSize: "2.5rem",
+                                color: "#244886",
+                                cursor: "pointer"
+                            }} />
                         </div>
                     </motion.div>
                 </div>

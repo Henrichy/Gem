@@ -7,13 +7,13 @@ import { getSessionData } from './helpers/SessionHelper';
 const ProtectedRoute = () => {
     const user = getSessionData('user');
     const isAuthenticated = !!user; // Check if user data exists in sessionStorage
-    console.log("ProtectedRoute - isAuthenticated:", isAuthenticated);
+    // console.log("ProtectedRoute - isAuthenticated:", isAuthenticated);
 
     useEffect(() => {
-        console.log("ProtectedRoute mounted");
+        // console.log("ProtectedRoute mounted");
 
         return () => {
-            console.log("ProtectedRoute unmounted");
+            // console.log("ProtectedRoute unmounted");
         };
     }, []);
 

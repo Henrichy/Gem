@@ -21,7 +21,6 @@ const Login = () => {
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     };
-    const navigate = useNavigate();
 
     const handleEmail = (event) => {
         setErrorMessage("");
@@ -52,10 +51,9 @@ const Login = () => {
             setErrorMessage("")
             saveSessionData('user', response.data.user);
             saveSessionData('token', response.data.token);
-            console.log(response.status, response.data.token, response.data.message, response.data.user);
+            // console.log(response.status, response.data.token, response.data.message, response.data.user);
             window.location.href = "http://www.testadmin.geminigroupng.com/";
         }).catch(err => {
-            const rat = err.response.data.message;
             console.error(err.response.data.message);
             // alert(rat);
             setErrorMessage(err.response.data.message)

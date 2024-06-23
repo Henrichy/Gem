@@ -14,15 +14,15 @@ const Blog = () => {
                 ease: "easeIn",
                 delay: 0.08,
                 duration: 1
-            }} className='blog-header'>Trending News From Our Blog</motion.h1>
+            }} className='blog-header'>Blog</motion.h1>
 
-            <motion.h4 initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{
+            {/* <motion.h4 initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{
                 y: { type: "spring", stiffness: 60 },
                 opacity: { duration: 1 },
                 ease: "easeIn",
                 delay: 0.0008,
                 duration: 0.9
-            }} className='second-blog-header'>We believe that the success of our company is a result of our clients growth.</motion.h4>
+            }} className='second-blog-header'>We believe that the success of our company is a result of our clients growth.</motion.h4> */}
 
             <div className='blog-slider'>
                 <div className='blog-one'>
@@ -49,7 +49,7 @@ const Blog = () => {
                                 ease: "easeIn",
                                 delay: 0.0008,
                                 duration: 0.9
-                            }}>How to Stretch Your network communication .</motion.h4>
+                            }}>5 ways to leverage SMS messaging to accelerate your business growth</motion.h4>
                         </Link>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Blog = () => {
                                 ease: "easeIn",
                                 delay: 0.0008,
                                 duration: 0.9
-                            }}>Planning Your Household network installation.</motion.h4>
+                            }}>How international brands are fuelling local demand for messaging services</motion.h4>
                         </Link>
                     </div>
                 </div>

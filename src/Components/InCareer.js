@@ -15,8 +15,15 @@ import errorImage from "../Assets/errorImage.png";
 import axios from 'axios';
 import { saveSessionData } from './helpers/SessionHelper';
 import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
+import { AppContext } from '../App';
+import { getSessionData } from './helpers/SessionHelper';
+import Failed from "./Failed";
+import fail from "../Assets/failed.png";
+
 
 const InCareer = () => {
+    const [mockdata, setMockdata] = useState([]);
     const [resume, setResume] = useState('');
     const [cover, setCover] = useState('');
     const [resumename, setResumename] = useState('');
@@ -26,12 +33,36 @@ const InCareer = () => {
     const [email, setEmail] = useState('');
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
+    const [isFailedOpen, setIsFailedOpen] = useState(false);
     const navigate = useNavigate();
+    const { value } = useContext(AppContext);
+    const [jobid, setJobid] = value;
 
+
+    useEffect(() => {
+        setData()
+    }, [])
+
+    async function setData() {
+        let job = getSessionData('jobid')
+        job = parseInt(job);
+        const URL = "http://127.0.0.1:8000/api/v1/jobs/" + job;
+        try {
+            await axios.get(URL)
+                .then((res) => {
+                    // const data = res.data.data;
+                    setMockdata(res.data.data);
+                })
+        } catch (error) {
+            console.error(error.message);
+            setErrorMessage(error.message)
+        }
+    }
 
     async function onSubmit(e) {
         e.preventDefault();
         let url = `${process.env.REACT_APP_URL_NAME}/applicants`;
+        const JobID = mockdata.id;
 
 
         const formData = new FormData();
@@ -40,10 +71,11 @@ const InCareer = () => {
         formData.append("last_name", lastname)
         formData.append("email", email)
         formData.append("resume", resume)
-        formData.append("job_title", "Office 365 Manager")
+        formData.append("job_id", JobID)
+        // formData.append("job_title", "Office 365 Manager") //change to job_id
         formData.append("cover_letter", cover)
 
-        axios.post(url, formData, {
+        await axios.post(url, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -86,10 +118,10 @@ const InCareer = () => {
                     delay: 0.0008,
                     duration: 0.9
                 }} className='first-div'>
-                    <h2 className='first-header'>Office 365 Administrator</h2>
+                    <h2 className='first-header'>{mockdata !== 'undefined' && mockdata.title}</h2>
                     <h4 className='second-header'>Who Are We Looking For</h4>
                     <ul className='first-list'>
-                        <li> <RxDotFilled /> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li> <RxDotFilled /> {mockdata !== 'undefined' && mockdata.description}</li>
                         <li> <RxDotFilled /> Nullam dictum ligula a gravida porta.</li>
                         <li> <RxDotFilled /> Nam pellentesque orci ut odio blandit, sit amet elementum augue venenatis.</li>
                         <li> <RxDotFilled /> Vivamus semper magna suscipit leo malesuada, eu dictum velit varius.</li>
@@ -119,7 +151,7 @@ const InCareer = () => {
                         <IoBagCheckSharp className='check-sharp' />
                         <div className='small-col'>
                             <h5 className='fourth-header'>Job Type</h5>
-                            <h5 className='fifth-header'>Full Time</h5>
+                            <h5 className='fifth-header'>{mockdata !== 'undefined' && mockdata.employmentType}</h5>
                         </div>
                     </div>
                     <div className='small-row'>
@@ -133,7 +165,7 @@ const InCareer = () => {
                         <GiOpenBook className='check-sharp' />
                         <div className='small-col'>
                             <h5 className='fourth-header'>Experience</h5>
-                            <h5 className='fifth-header'>3 years</h5>
+                            <h5 className='fifth-header'>{mockdata !== 'undefined' && mockdata.experience} years</h5>
                         </div>
                     </div>
                     <div className='small-row'>
@@ -214,7 +246,7 @@ const InCareer = () => {
                                 resumename ?
                                     <div>{resumename}</div> : <div className='file-divs'>
                                         <MdCloudUpload style={{ fontSize: "3rem", color: "#244886", marginBottom: 0 }} />
-                                        <h3 className='file-upload'> Click to upload Resume</h3>
+                                        <h3 className='file-upload'> Click to upload</h3>
                                     </div>
                             }
                         </motion.div>
@@ -235,14 +267,14 @@ const InCareer = () => {
                                 covername ?
                                     <div>{covername}</div> : <div className='file-divs'>
                                         <MdCloudUpload style={{ fontSize: "3rem", color: "#244886", marginBottom: 0 }} />
-                                        <h3 className='file-upload'> Click to upload Cover Letter</h3>
+                                        <h3 className='file-upload'> Click to upload</h3>
                                     </div>
                             }
                         </motion.div>
                     </div>
                 </div>
 
-                {errorMessage && <div style={{ color: "#f56a6a", fontSize: "1.5rem", marginBottom: "0.5rem", fontWeight: 600, alignSelf: "center", marginTop: "2rem" }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>}
+                {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "1.5rem", marginBottom: "0.5rem", fontWeight: 600, alignSelf: "center", marginTop: "2rem" }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
 
                 <input type='submit' value='Apply Now' />
             </form>
@@ -268,6 +300,27 @@ const InCareer = () => {
                     }
                 }>close this window</button>
             </Success>
+
+            <Failed isOpen={isFailedOpen} onClose={
+                () => {
+                    setIsFailedOpen(!isFailedOpen)
+                    window.location.reload(false)
+                    window.scrollTo(0, 0);
+                }
+            }>
+                <img src={fail} className='memo' alt="notepad"></img>
+                <h3 className='over-head'>Request Failed</h3>
+                <p className='overlay-body'>
+                    {errorMessage}
+                </p>
+                <button className='career-red' onClick={
+                    () => {
+                        setIsFailedOpen(!isFailedOpen)
+                        window.location.reload(false)
+                        window.scrollTo(0, 0);
+                    }
+                }>close this window</button>
+            </Failed>
             <Footer />
         </div >
     )

@@ -17,7 +17,7 @@ const Abouts = () => {
                     duration: 0.5
                 }} className='abouts-page-one'>
                     <h3 className='header-sam' >About us</h3>
-                    <h4 className='header-sam-two' >We are the leading telecommunication innovation company in the Africa with 10+ years experience in the Industry</h4>
+                    <h4 className='header-sam-two' >We are a blend of young professionals with a strong work ethic and a collaborative spirit. We're dedicated to maintaining reliable SMS infrastructure, expanding our customer base, and helping businesses achieve their goals.</h4>
                     <p className='header-sam-p'>
                         Gemini eliminate the need for VAS providers and content owners to maintain multiple physical connections to mobile network operators (MNOs) by proving a single connection point.
                     </p>
@@ -38,7 +38,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            Dedicated Teams
+                            Easy set up
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
@@ -47,8 +47,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three-p'>
-                            At Gemini group, we believe that excellence is not just a goal – it's a journey. And on this journey, our dedicated teams stand as beacons of innovation, collaboration, and unwavering commitment to success.
-                            Our dedicated teams are the heartbeat of our organization, tirelessly working towards achieving our goals, fulfilling our vision, and exceeding the expectations of our clients and partners. Bringing together individuals with diverse talents and backgrounds united by a common purpose.
+                            We prioritize getting you started fast! Our streamlined onboarding process involves signing your contract, whitelisting your Sender ID (if applicable), and integrating our user-friendly platform. Throughout this process, our dedicated technical support team is by your side, ensuring a smooth setup. Their commitment to excellent service delivery means you'll be sending impactful SMS campaigns with confidence in no time.
                         </motion.p>
                     </div>
                 </div>
@@ -68,8 +67,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            Certified Professionals
-                        </motion.h3>
+                            Reliable software and high delivery rates                        </motion.h3>
                         <motion.p initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
                             opacity: { duration: 1 },
@@ -77,8 +75,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three-p'>
-                            What does it mean to be certified by us? It signifies a dedication to mastery, a commitment to staying ahead of industry standards, and a passion for delivering exceptional results. Each member of our Certified Professionals has undergone rigorous training and testing to ensure they possess the knowledge and skills necessary to excel in their respective fields.
-                            Whether it's in technology, our Certified Professionals are equipped to handle any challenge with confidence and proficiency.
+                            Our Bulk SMS and VAS platforms takes care of the heavy lifting, ensuring your messages reach their target audience with unmatched reliability. No need to worry about message failures or technical hiccups. Instead, focus on crafting maximizing the engagement you deserve. With us, you're guaranteed a smooth and stress-free experience
                         </motion.p>
                     </div>
                 </div>
@@ -98,7 +95,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            24/7 Support Service
+                            Competitive Pricing
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
@@ -107,14 +104,15 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three-p'>
-                            What sets our 24/7 support team apart is not just their availability, but their unwavering commitment to excellence. Each member is highly trained, experienced, and equipped with the latest tools and resources to address your needs efficiently and effectively. From troubleshooting technical glitches to offering guidance and advice, our support team is dedicated to ensuring your satisfaction and success.
+                            Stretch your marketing budget further with our cost-effective bulk SMS solutions. We meticulously analyse competitor pricing and adjust ours to ensure you get the best value. This commitment to affordability means you can reach more customers without breaking the bank.
                         </motion.p>
                     </div>
                 </div>
                 <div className='abouts-blank'>
                 </div>
-                <Contact />
+
             </div>
+            <Contact />
             <Footer />
         </div >
     )

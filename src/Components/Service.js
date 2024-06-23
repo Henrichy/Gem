@@ -37,7 +37,7 @@ const Service = () => {
                 delay: 0.0008,
                 duration: 0.9
             }} className='service-page-three'>
-                <h3 className='vas-white'>Hardware and Software development</h3>
+                <h3 className='vas-white'>SMS routing services</h3>
                 <h4 className='eliminate-white'
                 >We eliminate the need for VAS providers and content owners to maintain multiple physical connections to mobile network operators (MNOs) by proving a single connection point.</h4>
             </motion.div>

@@ -38,11 +38,11 @@ const Contact = () => {
             }
         }).then((response) => {
             setErrorMessage("")
-            console.log(response.data.message);
+            // console.log(response.data.message);
             setIsSuccessOpen(!isSuccessOpen);
-        }).catch(response => {
-            console.log(response.response.data.message);
-            setErrorMessage(response.response.data.message)
+        }).catch(error => {
+            console.error(error)
+            setErrorMessage(error.data.message)
         });
     };
 
@@ -55,39 +55,31 @@ const Contact = () => {
             </div>
 
             <p className='contact-body'>
-                Please feel free to contact us to speak with one of our consultants. whether you are looking for our aggregator platform or seeking new ideas and solution to transform your telecommunication business
+                Our clients reach out to us to support their customer engagement strategies
             </p>
 
             <form className='contact-form' onSubmit={onSubmit} action="/Contact.js" method="post">
-                <label style={{
-                    fontFamily: "poppins",
-                    fontSize: "0.75rem",
-                    color: "red"
-                }}>*</label>
-                <input type="text" placeholder='Name' name="fullname" required value={name} onChange={(e) => setName(e.target.value)} />
-                <label style={{
-                    fontFamily: "poppins",
-                    fontSize: "0.75rem",
-                    color: "red"
-                }}>*</label>
-                <input type="email" placeholder='Email' name="emailaddress" required value={email} onChange={(e) => setEmail(e.target.value)} />
 
-                <label style={{
-                    fontFamily: "poppins",
-                    fontSize: "0.75rem",
-                    color: "red"
-                }}>*</label>
-                <input type="tel" required placeholder='Phone number' name="phonenumber" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                <input type="text" placeholder='Name *' name="fullname" required value={name} onChange={(e) => setName(e.target.value)} />
+
+                <input type="email" placeholder='Email *' name="emailaddress" required value={email} onChange={(e) => setEmail(e.target.value)} />
+
+
+                <input type="tel" required placeholder='Phone number *' name="phonenumber" value={phone} onChange={(e) => setPhone(e.target.value)} />
 
                 <label style={{
                     fontFamily: "poppins",
                     fontSize: "0.75rem",
                     color: "#8D8D8D"
                 }}>Message <span style={{ color: "red" }}>*</span></label>
-                <input style={{
+                <textarea style={{
                     border: "none",
-                    borderBottom: "1px solid #8D8D8D"
-                }} type="text" placeholder='Write your message..' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
+                    borderBottom: "1px solid #8D8D8D",
+                    height: "10rem",
+                    padding: "1rem"
+
+                }} placeholder='Write your message..' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                {/* <input  /> */}
 
                 {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
                 <input type="submit" value="Send Message " />

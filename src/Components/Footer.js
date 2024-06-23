@@ -14,6 +14,7 @@ import Service from './Service';
 import Blogs from './Blogs';
 import Careers from './Careers';
 import Admin from './Admin';
+import Privacy from './Privacy';
 
 
 
@@ -25,14 +26,12 @@ const Footer = () => {
                     <FaPhone className='io-mail' />
                     <div className='row-content'>
                         <h3>+234-9058895393</h3>
-                        <h4>Hotline 24/7</h4>
                     </div>
                 </div>
                 <div className='rowone-b'>
                     <IoMailOpen className='io-mail' />
                     <div className='row-content'>
                         <h3>contact@geminigroupng.com</h3>
-                        <h4>Free consult</h4>
                     </div>
                 </div>
                 <div className='rowone-c'>
@@ -52,7 +51,7 @@ const Footer = () => {
                     <div className='rowtwo-background'>
                     </div>
                     <p>
-                        we rely on our strategic partnerships and industry knowledge to provide our clients with pragmatic solutions and comprehensive analysis.
+                        Let us help you leverage the reach and effectiveness of SMS to achieve your business goals in Nigeria.
                     </p>
                     <div className='rowtwologos'>
                         <CiFacebook className='facebook' />
@@ -86,9 +85,15 @@ const Footer = () => {
                         <Link to="/careers" element={<Careers />} style={{ textDecoration: "none" }}>
                             <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Career</li>
                         </Link>
-                        <Link to="/admin/login" target="_blank" rel="noopener noreferrer" element={<Admin />} style={{ textDecoration: "none" }}>
+                        {/* <a target="_blank" href="http://www.testadmin.geminigroupng.com/" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                             <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Admin</li>
+                        </a> */}
+                        <Link to="/privacy" element={<Privacy />} style={{ textDecoration: "none" }}>
+                            <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Privacy</li>
                         </Link>
+
+
+
                     </ul>
                 </div>
                 <div className='rowtwo-c'>
@@ -102,7 +107,8 @@ const Footer = () => {
                     }}>SERVICES</h3>
                     <ul className='rowsecondlist'>
                         <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Value Added Services (VAS)</li>
-                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Hardware And Software development</li>
+                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> SMS routing services</li>
+                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> USSD services</li>
                         <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Telecom Consulting</li>
                     </ul>
                 </div>

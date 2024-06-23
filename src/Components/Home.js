@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom';
 import Service from './Service';
 import { TbReportAnalytics } from "react-icons/tb";
 import { useEffect } from 'react';
-import { easeIn, motion, useScroll } from "framer-motion";
-import Cyber from "../Assets/cybersecurity.png"
+import { color, easeIn, motion, useScroll } from "framer-motion";
+import Cyber from "../Assets/cybersecurity.png";
 
 
 const Home = () => {
@@ -49,23 +49,26 @@ const Home = () => {
                             delay: .025,
                             duration: 0.35
                         }} className='home-text'>
-                        <h4>Telecoms Value Added Service Aggregator</h4>
+                        <h4 style={{
+                            color: "#223ac0",
+                            fontWeight: 600
+                        }}>Telecoms Value Added Service Aggregator</h4>
 
-                        <h2>Reach More, Engage Better.</h2>
+                        <h2 className='hoht'>Reach More, Engage Better.</h2>
 
-                        <h2>
+                        <h2 className='hohta'>
                             Innovative <span style={{
-                                color: "#244886",
+                                color: "#083a8f",
                                 display: 'inline-block',
                                 wordWrap: 'break-word'
                             }}> VAS and Bulk SMS</span> Solutions for Nigeria
                         </h2>
 
-                        <p>we empower businesses of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
+                        <p style={{ color: "#ffffff", fontWeight: 500, marginTop: "1rem" }}>we empower businesses of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
 
                         <div className='center-butt'>
                             <Link to="/services" element={<Service />} style={{ textDecoration: "none" }}>
-                                <button className="contact-button">
+                                <button className="conta">
                                     <span style={{
                                         marginRight: ".5rem"
                                     }}>

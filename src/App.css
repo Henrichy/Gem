@@ -29,6 +29,7 @@ body {
   font-family: Montserrat;
   font-size: 2.88rem;
   color: #244886;
+  color: #b6c7e7;
   margin-bottom: 1rem
 }
 
@@ -91,15 +92,15 @@ nav {
 }
 
 .home-contents {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  margin-top: 3rem;
+
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 100%;
+  /* background-color: red; */
 }
 
 .about-contents {
@@ -303,7 +304,7 @@ nav {
 }
 
 .service-contents {
-  min-height: 80vh;
+  min-height: 60vh;
   margin-top: 2rem;
   background-color: #ffffff;
   padding-left: 3.5rem;
@@ -312,7 +313,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 16vh;
+  margin-bottom: 4rem;
 }
 
 .eliminate {
@@ -332,8 +333,8 @@ nav {
 }
 
 .blog-contents {
-  min-height: 80vh;
-  margin-top: 2rem;
+  min-height: 30vh;
+  margin-top: 0rem;
   background-color: #F7F6FF;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -354,6 +355,11 @@ nav {
 }
 
 .contact-contents h2 {
+  font-size: 4.3rem;
+  font-weight: 600;
+}
+
+.privacy-contents h2 {
   font-size: 4.3rem;
   font-weight: 600;
 }
@@ -470,6 +476,18 @@ input[type=submit] {
   border-radius: 5px;
 }
 
+.con {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
 
 input[type=text].active {
   border: 0px solid #E0E0E0;
@@ -731,9 +749,9 @@ input[type=email]:focus {
 
 .service-header-one h1 {
   color: #244886;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -761,7 +779,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #F7F6F7;
-  background-image: url("Assets/phonest.png");
+  background-image: url("Assets/sent.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -823,6 +841,13 @@ input[type=email]:focus {
   width: 100%;
   max-width: 100%;
   margin-bottom: 2rem;
+  background-image: url("Assets/back.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 3rem;
 }
 
 .abouts-page-one {
@@ -883,7 +908,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/dedicated-teams.png");
+  background-image: url("Assets/prof.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -916,7 +941,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/certified-professionals.png");
+  background-image: url("Assets/pro.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -935,8 +960,8 @@ input[type=email]:focus {
 
 .file-upload {
   font-family: Montserrat;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 500;
   margin-top: 0;
 }
 
@@ -984,8 +1009,9 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 54%;
-  max-width: 55%;
+  width: 60%;
+  max-width: 65%;
+  /* color: #083a8f; */
   min-height: 30rem;
 }
 
@@ -1006,7 +1032,21 @@ input[type=email]:focus {
   display: flex;
 }
 
-.with-blur-backdrops h3 {
+.service-one h3 {
+  color: #244886;
+  font-size: 1.56rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.service-two h3 {
+  color: #244886;
+  font-size: 1.56rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.service-three h3 {
   color: #244886;
   font-size: 1.56rem;
   font-weight: 700;
@@ -1036,44 +1076,64 @@ input[type=email]:focus {
 }
 
 .service-one {
-  width: 100%;
+  width: 48%;
   max-width: 100%;
-  background-color: #ffffff;
-  background-image: url("Assets/blur1.png");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: fit-content;
-  border-radius: 25px;
+  background-color: #a2c3ee;
+  border: 0.5px solid #6c7f9e;
+  min-height: 15rem;
+  border-radius: 3px;
+  padding: 1rem;
 }
 
 .service-two {
-  width: 100%;
+  width: 48%;
   max-width: 100%;
-  background-color: #ffffff;
-  background-image: url("Assets/blur2.png");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: fit-content;
-  border-radius: 25px;
+  background-color: #a2c3ee;
+  border: 0.5px solid #6c7f9e;
+  min-height: 15rem;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.service-row {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 20vh;
+  margin-top: 2rem;
+}
+
+.service-rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-link {
   text-decoration: none;
-  width: 31%
+  width: 100%;
+}
+
+.privacy-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center !important;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .service-three {
   width: 100%;
   max-width: 100%;
-  background-color: #ffffff;
-  min-height: fit-content;
-  background-image: url("Assets/blur3.png");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 25px;
+  background-color: #d6e1f5;
+  min-height: 15rem;
+  border-radius: 3px;
+  padding: 1rem;
+  border: 0.5px solid #6c7f9e;
+  margin-top: 2rem;
 }
 
 .home-text h4 {
@@ -1087,11 +1147,12 @@ input[type=email]:focus {
   max-width: 50%;
   min-height: 30rem;
   background-color: #ffffff;
-  background-image: url("Assets/gems.png");
+  background-image: url("Assets/sec.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 0;
+  display: none;
 }
 
 .home-text h1 {
@@ -1100,18 +1161,27 @@ input[type=email]:focus {
   font-family: Montserrat;
 }
 
-.home-text h2 {
-  margin-top: 1rem;
-  font-size: 2.6rem;
+.hoht {
+  margin-top: 3rem;
+  font-size: 3.05rem;
   font-family: Montserrat;
+  color: #ffffff
+}
+
+.hohta {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-family: Montserrat;
+  font-weight: 700;
+  /* color: #ffffff */
 }
 
 .home-text p {
   margin-top: 0.755rem;
   margin-bottom: 2rem;
   color: #2E2D2D;
-  font-size: 1.35rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .navbar-menu-container {
@@ -1138,6 +1208,24 @@ input[type=email]:focus {
   height: 3rem;
   display: flex;
   white-space: nowrap;
+  margin: 1rem auto;
+}
+
+.conta {
+  padding: 1rem 3rem;
+  background-color: #223ac0;
+  /* opacity: 5; */
+  color: #ffffff;
+  border: 3.5px solid #223ac0;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+  /* height: 3rem; */
+  display: flex;
+  white-space: nowrap;
+  margin: 1rem auto;
 }
 
 .apply-button {
@@ -1258,16 +1346,18 @@ input[type=email]:focus {
 
 .header-one {
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .header-one h3 {
   font-size: 2rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .two-body {
@@ -1314,6 +1404,8 @@ input[type=email]:focus {
   align-items: center;
   width: 100%;
   max-width: 100%;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .overlay-background {
@@ -1327,14 +1419,26 @@ input[type=email]:focus {
   z-index: 8;
 }
 
+.service-image {
+  width: 45%;
+  background-color: #ffffff;
+  background-image: url("Assets/first.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 45%;
+  min-height: 73vh;
+}
+
 .service-slider {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 6.5rem;
-  margin-top: 1rem;
+  width: 53%;
+  max-width: 53%;
+  /* background-color: #244886; */
+  /* margin-bottom: 4.5rem; */
 }
 
 .expert-slider {
@@ -1343,7 +1447,8 @@ input[type=email]:focus {
   align-items: center;
   width: 100%;
   max-width: 100%;
-  margin-top: 6.5vh;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 .career-input {
@@ -1462,29 +1567,28 @@ input[type=email]:focus {
 
 .expert-content {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 60%;
-  max-width: 60%;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 75%;
+  max-width: 75%;
 }
 
-.expert-content h3 {
+.expert-info h3 {
   color: #060336;
   font-size: 1.25rem;
 }
 
-.expert-content h5 {
+.expert-info h5 {
   color: #6A6A6A;
   font-size: 1rem;
   font-family: 'Space Grotesk';
   font-weight: 400;
-  margin-top: 0.5rem;
 }
 
 .expert-contact {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: center;
+  width: 15%;
   max-width: 30%;
 }
 
@@ -1503,15 +1607,16 @@ input[type=email]:focus {
 }
 
 .choose-page {
-  margin-bottom: 20vh;
-  min-height: 30vh;
+  margin-bottom: 3rem;
+  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .expert-page {
-  min-height: 30vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1529,8 +1634,8 @@ input[type=email]:focus {
 
 .expert-page p {
   color: #6A6A6A;
-  width: 30%;
-  max-width: 30%;
+  width: 70%;
+  max-width: 70%;
   text-align: center;
 }
 
@@ -1583,7 +1688,7 @@ input[type=email]:focus {
   color: #2F2F2F;
   font-weight: 500;
   margin-bottom: 0.35rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: Montserrat;
 }
 
@@ -2073,7 +2178,7 @@ input[type=email]:focus {
   max-width: 47%;
   width: 48%;
   min-height: 50vh;
-  background-image: url("Assets/girls.png");
+  background-image: url("Assets/team.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2244,7 +2349,7 @@ input[type=email]:focus {
 input[type=file] {
   width: 100%;
   height: inherit;
-  background-color: red;
+  /* background-color: red; */
   display: none;
 }
 
@@ -2464,7 +2569,7 @@ input[type=file] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .about-contents {
@@ -2611,7 +2716,7 @@ input[type=file] {
 
   .service-header-one {
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2859,6 +2964,8 @@ input[type=file] {
     font-weight: 600;
     text-align: center;
   }
+
+
 
   .contact-contents p {
     margin-top: .75rem;

@@ -6,10 +6,32 @@ import { IoIosMore } from "react-icons/io";
 import Contact from "./Contact";
 import Footer from './Footer';
 import { motion } from 'framer-motion';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { saveSessionData } from './helpers/SessionHelper';
 
 
 
 const Blogs = () => {
+    const [mockdata, setMockdata] = useState([]);
+
+    useEffect(() => {
+        setData()
+    }, [])
+
+    async function setData() {
+        try {
+            await axios.get('http://127.0.0.1:8000/api/v1/blogs')
+                .then((res) => {
+                    console.log(res.data.data);
+                    setMockdata(res.data.data);
+                })
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+
     return (
         <div className='blog-container'>
             <Navbar />
@@ -29,73 +51,49 @@ const Blogs = () => {
                 <div className='blog-hr'>
                 </div>
             </div>
-            <motion.div whileHover={{ scale: 1.03 }} className='blogs-page-one'>
-                <div className='blog-one-row'>
-                    <div className='bor-content'>
-                        <div className='bor-content-row'>
-                            <img src={Elipses} className='elip' alt="elipses"></img>
-                            <h5 className='writer'>Dr Fidel Abowei</h5>
-                            <h5 className='writer-two'>4 hours ago</h5>
+
+            {mockdata !== 'undefined' && mockdata.map((blog, index) => {
+                const blogID = blog.id
+                return (
+                    <motion.div key={index} whileHover={{ scale: 1.03 }} className='blogs-page-one'>
+                        <div className='blog-one-row'>
+                            <div className='bor-content'>
+                                <div className='bor-content-row'>
+                                    <img src={Elipses} className='elip' alt="elipses"></img>
+                                    <h5 className='writer'>{blog.authorName}</h5>
+                                    <h5 className='writer-two'>4 hours ago</h5>
+                                </div>
+                                <h3 className='new-sms' onClick={() => {
+                                    saveSessionData('blogid', blogID)
+                                    window.location.href = "http://localhost:3000/blogs/blog";
+                                }}>{blog.topic} </h3>
+                                <p className='new-sms-body' >
+                                    {blog.body}
+                                </p>
+                            </div>
+                            <div className='bor-image'>
+                            </div>
                         </div>
-                        <h3 className='new-sms'>New development on SMS that you don't Know </h3>
-                        <p className='new-sms-body' >
-                            JavaScript continues to evolve and undergo new developments. Being a foundational language development, often sees updates and improvements in the form of new features, tools, and libraries. Here are some and developments in JavaScript that you might find interesting...
-                        </p>
-                    </div>
-                    <div className='bor-image'>
-                    </div>
-                </div>
-                <div className='last-bor'>
-                    <div className='last-bor-one'>
-                        <button className="dummy-button">
-                            SMS
-                        </button>
-                        <h5 className='header-five'>3 min read</h5>
-                        <h5 className='header-five'>Selected for you</h5>
-                    </div>
+                        <div className='last-bor'>
+                            <div className='last-bor-one'>
+                                <button className="dummy-button">
+                                    {blog.category}
+                                </button>
+                                <h5 className='header-five'>3 min read</h5>
+                                <h5 className='header-five'>Selected for you</h5>
+                            </div>
 
-                    <div className='last-bor-two'>
-                        <IoIosMore style={{
-                            marginRight: "4.8rem",
-                            fontSize: "1.2rem"
-                        }} />
-                    </div>
-                </div>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.03 }} className='blogs-page-one-end'>
-                <div className='blog-one-row'>
-                    <div className='bor-content'>
-                        <div className='bor-content-row'>
-                            <img src={Elipses} className='elip' alt="elipses"></img>
-                            <h5 className='writer'>Dr Olufemi Olumodeji</h5>
-                            <h5 className='writer-two'>4 hours ago</h5>
+                            <div className='last-bor-two'>
+                                <IoIosMore style={{
+                                    marginRight: "4.8rem",
+                                    fontSize: "1.2rem"
+                                }} />
+                            </div>
                         </div>
-                        <h3 className='new-sms'>New SMS techniques for promotions</h3>
-                        <p className='new-sms-body'>
-                            JavaScript continues to evolve and undergo new developments. Being a foundational language development, often sees updates and improvements in the form of new features, tools, and libraries. Here are some and developments in JavaScript that you might find interesting...
-                        </p>
-                    </div>
-                    <div className='bor-image'>
-                    </div>
-                </div>
-                <div className='last-bor'>
-                    <div className='last-bor-one'>
-                        <button className="dummy-button">
-                            SMS
-                        </button>
-                        <h5 className='header-five'>3 min read</h5>
+                    </motion.div>
 
-                        <h5 className='header-five'>Selected for you</h5>
-                    </div>
-
-                    <div className='last-bor-two'>
-                        <IoIosMore style={{
-                            marginRight: "4.8rem",
-                            fontSize: "1.2rem"
-                        }} />
-                    </div>
-                </div>
-            </motion.div>
+                );
+            })}
             <Contact />
             <Footer />
         </div >
