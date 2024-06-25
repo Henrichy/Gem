@@ -95,19 +95,19 @@ const Navbar = () => {
 
             </div>
             <div className="navbar-links-container">
-                <NavLink to="/" element={<Home />}>
+                <NavLink to="/" style={{ fontSize: "1.2rem" }} element={<Home />}>
                     Home
                 </NavLink>
-                <NavLink to="/about" element={<Abouts />}>
+                <NavLink to="/about" style={{ fontSize: "1.2rem" }} element={<Abouts />}>
                     About
                 </NavLink>
-                <NavLink to="/services" element={<Service />}>
+                <NavLink to="/services" style={{ fontSize: "1.2rem" }} element={<Service />}>
                     Services
                 </NavLink>
-                <NavLink to="/blog" element={<Blogs />}>
+                <NavLink to="/blog" style={{ fontSize: "1.2rem" }} element={<Blogs />}>
                     Blog
                 </NavLink>
-                <NavLink to="/careers" >
+                <NavLink to="/careers" style={{ fontSize: "1.2rem" }} element={<Careers />} >
                     Career
                 </NavLink>
             </div>

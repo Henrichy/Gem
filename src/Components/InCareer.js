@@ -81,7 +81,7 @@ const InCareer = () => {
             }
         }).then((response) => {
             setErrorMessage("")
-            console.log(response.data.message);
+            // console.log(response.data.message);
             setIsSuccessOpen(!isSuccessOpen);
         }).catch(err => {
             const rat = err.response.data.message;

@@ -29,8 +29,14 @@ body {
   font-family: Montserrat;
   font-size: 2.88rem;
   color: #244886;
-  color: #b6c7e7;
   margin-bottom: 1rem
+}
+
+.head-on {
+  font-family: Montserrat;
+  font-size: 2.88rem;
+  color: #244886;
+  margin-bottom: 0.5rem
 }
 
 .one-body {
@@ -68,11 +74,19 @@ nav {
   margin-bottom: 0.8rem
 }
 
+.blog-summary {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 0.8rem;
+}
+
 .new-sms {
   font-family: "Space Grotesk";
-  color: #010101;
-  font-size: 1.38rem;
-  font-weight: 500;
+  color: #244886;
+  font-size: 1.3rem;
+  font-weight: 700;
   margin-top: 0.75rem;
   cursor: pointer
 }
@@ -100,7 +114,6 @@ nav {
   justify-content: space-between;
   width: 100%;
   max-width: 100%;
-  /* background-color: red; */
 }
 
 .about-contents {
@@ -283,6 +296,51 @@ nav {
   flex-direction: column;
 }
 
+.blog-case {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+
+.blog-case-left {
+  width: 68%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.trends {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.minitrends {
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+.blog-case-right {
+  width: 32%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: .25px solid #e6e1e1;
+  padding: 2.2rem;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.blogs-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: ; */
+}
+
 .contacts-container {
   width: 100%;
   max-width: 100%;
@@ -312,13 +370,14 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  align-content: center;
   margin-bottom: 4rem;
 }
 
 .eliminate {
   font-family: Montserrat;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 1rem
@@ -326,7 +385,15 @@ nav {
 
 .eliminate-white {
   font-family: Montserrat;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 1rem
+}
+
+.eliminate-white-mini {
+  font-family: Montserrat;
+  font-size: 0.9rem;
   font-weight: 500;
   color: #000000;
   margin-bottom: 1rem
@@ -340,10 +407,19 @@ nav {
   padding-right: 3.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 10vh;
 }
+
+.blogs-header {
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+
+}
+
 
 .contact-contents {
   min-height: 80vh;
@@ -359,17 +435,13 @@ nav {
   font-weight: 600;
 }
 
-.privacy-contents h2 {
-  font-size: 4.3rem;
-  font-weight: 600;
-}
-
 .contact-body {
-  margin-top: 3.5vh;
+  margin-top: 0.8rem;
   width: 45%;
   max-width: 50%;
   color: #000000;
   font-size: 0.88rem;
+  text-align: cen;
 }
 
 .contact-form {
@@ -410,6 +482,8 @@ input[type=submit] {
   font-size: 1rem;
   font-weight: 500;
 }
+
+
 
 .career-form input[type=submit] {
   margin-top: 0.8rem;
@@ -526,6 +600,7 @@ input[type=email]:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .footer-rowone {
@@ -548,9 +623,11 @@ input[type=email]:focus {
 }
 
 .rowone-a {
-  width: 22%;
-  max-width: 22%;
+  width: 20%;
+  max-width: 20%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rowtwo-a {
@@ -637,15 +714,19 @@ input[type=email]:focus {
 }
 
 .rowone-b {
-  width: 29%;
-  max-width: 29%;
+  width: 33%;
+  max-width: 33%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rowone-c {
   width: 43%;
   max-width: 43%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row-content {
@@ -657,6 +738,20 @@ input[type=email]:focus {
 .footer-hr {
   width: 90%;
   border-bottom: 1px solid #ffffff;
+}
+
+.sms {
+  width: 100%;
+  max-width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+
+.blog-hr {
+  width: 100%;
+  border-bottom: 0.25px solid #e4d7d7;
+  margin-bottom: 1.35rem;
 }
 
 .blog-hr {
@@ -682,7 +777,7 @@ input[type=email]:focus {
 .blog-slider {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 93%;
   max-width: 93%;
   margin-top: 10vh;
@@ -716,6 +811,7 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
 }
 
 .blog-two {
@@ -756,8 +852,16 @@ input[type=email]:focus {
 }
 
 .service-header-one h2 {
+  color: #244886;
+  font-size: 2.45rem;
+  margin-top: 0.75rem;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.service-header-one h5 {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-top: 0.75rem;
   font-family: Montserrat;
@@ -790,8 +894,6 @@ input[type=email]:focus {
   font-size: 1.75rem;
 }
 
-
-
 .about-text {
   min-height: 70vh;
   width: 47%;
@@ -804,11 +906,11 @@ input[type=email]:focus {
 
 .about-text h2 {
   color: #244886;
-  font-size: 2.5rem;
+  font-size: 2.45rem;
 }
 
 .about-text p {
-  font-size: 1.63rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1.25rem;
 }
@@ -820,18 +922,21 @@ input[type=email]:focus {
 
 .about-list li {
   color: #010101;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .choose-list li {
   color: #010101;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
+  align-items: center;
 }
 
 .page-one {
@@ -1032,31 +1137,44 @@ input[type=email]:focus {
   display: flex;
 }
 
+.serve-image {
+  height: 7rem;
+  width: 40%;
+  max-width: 50%;
+  margin-bottom: .75rem;
+  /* margin: 0px auto; */
+  align-self: center;
+}
+
+
 .service-one h3 {
-  color: #244886;
-  font-size: 1.56rem;
+  color: #ffffff;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  /* text-align: center; */
 }
 
 .service-two h3 {
-  color: #244886;
-  font-size: 1.56rem;
+  color: #ffffff;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 .service-three h3 {
-  color: #244886;
-  font-size: 1.56rem;
+  color: #ffffff;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 .blog-header {
   margin-top: 4.5rem;
-  font-size: 3rem;
-  color: #060336;
+  color: #244886;
+  font-size: 2.45rem;
   font-weight: 700
 }
 
@@ -1076,34 +1194,47 @@ input[type=email]:focus {
 }
 
 .service-one {
-  width: 48%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
   max-width: 100%;
-  background-color: #a2c3ee;
-  border: 0.5px solid #6c7f9e;
-  min-height: 15rem;
-  border-radius: 3px;
-  padding: 1rem;
+  background-color: #190879;
+  min-height: fit-content;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .service-two {
-  width: 48%;
-  max-width: 100%;
-  background-color: #a2c3ee;
-  border: 0.5px solid #6c7f9e;
-  min-height: 15rem;
-  border-radius: 3px;
-  padding: 1rem;
-}
-
-.service-row {
   display: flex;
-
-  width: 100%;
+  flex-direction: column;
+  width: 30%;
+  max-width: 100%;
+  background-color: #190879;
+  min-height: fit-content;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
-  min-height: 20vh;
-  margin-top: 2rem;
 }
+
+.service-three {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 100%;
+  background-color: #190879;
+  min-height: fit-content;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .service-rows {
   width: 100%;
@@ -1116,24 +1247,106 @@ input[type=email]:focus {
   width: 100%;
 }
 
+.private-head {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.private-head-two {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2.75rem;
+}
+
+.private-heads {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 1.75rem;
+}
+
+.private-update {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  margin-top: 0rem;
+}
+
+.private-updates {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.private-body {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.65rem;
+}
+
+
+.private-overlist {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.private-list {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.private-li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.private-li li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.private-list li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.private-list-mini {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+.private-list-mini li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+  display: flex;
+  align-items: center;
+}
+
 .privacy-contents {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center !important;
+  justify-content: flex-start;
+  align-items: left !important;
   min-height: 100vh;
   width: 100%;
-}
-
-.service-three {
-  width: 100%;
-  max-width: 100%;
-  background-color: #d6e1f5;
-  min-height: 15rem;
-  border-radius: 3px;
-  padding: 1rem;
-  border: 0.5px solid #6c7f9e;
-  margin-top: 2rem;
+  padding: 4.5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .home-text h4 {
@@ -1193,6 +1406,7 @@ input[type=email]:focus {
   align-items: center;
   justify-content: space-between;
   max-width: 40%;
+
 }
 
 .contact-button {
@@ -1289,6 +1503,10 @@ input[type=email]:focus {
   width: fit-content;
 }
 
+.writer-two {
+  color: #000000;
+}
+
 .service-button-clear {
   padding: 0.9rem 1.2rem;
   background-color: #ffffff;
@@ -1320,6 +1538,7 @@ input[type=email]:focus {
   display: flex;
   white-space: nowrap;
   margin-top: 1rem;
+  /* right: 0; */
 }
 
 .about-button:hover {
@@ -1354,8 +1573,8 @@ input[type=email]:focus {
   padding-right: 3.5rem;
 }
 
-.header-one h3 {
-  font-size: 2rem;
+.header-one h2 {
+  font-size: 2.45rem;
   width: 100%;
   text-align: center;
 }
@@ -1419,27 +1638,17 @@ input[type=email]:focus {
   z-index: 8;
 }
 
-.service-image {
-  width: 45%;
-  background-color: #ffffff;
-  background-image: url("Assets/first.jpg");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 45%;
-  min-height: 73vh;
-}
-
 .service-slider {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 53%;
-  max-width: 53%;
-  /* background-color: #244886; */
-  /* margin-bottom: 4.5rem; */
+  align-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 2.75rem;
+  margin-bottom: 3.25rem;
 }
+
 
 .expert-slider {
   display: flex;
@@ -1517,6 +1726,7 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .expert-two {
@@ -1527,6 +1737,7 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .career-label {
@@ -1554,11 +1765,12 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .expert-info {
   display: flex;
-  width: 100%;
+  width: 80%;
   max-width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -1607,12 +1819,13 @@ input[type=email]:focus {
 }
 
 .choose-page {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
   min-height: 20vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3rem;
 }
 
 .expert-page {
@@ -1626,10 +1839,33 @@ input[type=email]:focus {
 }
 
 .expert-page h2 {
-  color: #060336;
-  font-size: 2.5rem;
+  color: #244886;
+  font-size: 2.45rem;
   font-weight: 700;
-  margin-bottom: 2.5vh;
+  margin-bottom: 0.75rem;
+}
+
+.expert-page h5 {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: Montserrat;
+  width: 60%;
+  max-width: 60%;
+  text-align: center;
+}
+
+.expert-hid {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: Montserrat;
+  text-align: center;
+  min-width: 100%;
+  max-width: 100%;
+  text-align: left !important;
 }
 
 .expert-page p {
@@ -1647,15 +1883,15 @@ input[type=email]:focus {
   max-width: 48%;
 }
 
-.left-choose h2 {
+.choose-page h2 {
   color: #244886;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.45rem;
+  margin-bottom: 2.5rem;
   font-weight: 700;
 }
 
 .left-choose p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000000;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -1666,8 +1902,17 @@ input[type=email]:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  align-self: flex-start;
   width: 48%;
   max-width: 48%;
+  /* margin-top: 2rem; */
+  /* background-color: red; */
+}
+
+.choose-row {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
 }
 
 .service-list {
@@ -1678,11 +1923,11 @@ input[type=email]:focus {
   list-style: none;
 }
 
-.choose-list li {
+/* .choose-list li {
   font-size: 1.75rem;
   color: #000000;
   font-weight: 600;
-}
+} */
 
 .service-list li {
   color: #2F2F2F;
@@ -1690,6 +1935,38 @@ input[type=email]:focus {
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
   font-family: Montserrat;
+  justify-self: center;
+  align-self: center;
+}
+
+.serve-list {
+  list-style: none;
+}
+
+.serve-list li {
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 0.35rem;
+  font-size: 0.8rem;
+  font-family: Montserrat;
+  justify-self: center;
+  align-self: center;
+}
+
+.serve-list-white {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  color: #b3bcee
+}
+
+.serve-list-white li {
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 0.35rem;
+  font-size: 0.7rem;
+  font-family: Montserrat;
+  justify-self: center;
+  align-self: center;
 }
 
 .unit h3 {
@@ -1702,7 +1979,8 @@ input[type=email]:focus {
 
 .unit p {
   margin-top: 1.25rem;
-  font-size: 1.13rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #747474;
   text-align: center;
 }
@@ -1814,7 +2092,7 @@ input[type=email]:focus {
   justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 1rem;
 }
 
 .first-header {
@@ -1971,11 +2249,23 @@ input[type=email]:focus {
 
 .writer {
   font-family: "Space Grotesk";
+  color: #244886;
+  font-size: 0.88rem;
+  margin-left: 0.5rem;
+  font-weight: 500
+}
+
+.writes {
+  font-family: "Space Grotesk";
+  color: #1d3157;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.writes-two {
+  font-family: "Space Grotesk";
   color: #010101;
   font-size: 0.88rem;
-  margin-left: 2rem;
-  margin-right: 4rem;
-  margin-top: 0.5rem;
   font-weight: 500
 }
 
@@ -1985,16 +2275,6 @@ input[type=email]:focus {
   color: #001833;
   margin-bottom: 1rem;
   font-weight: 700;
-}
-
-.writer-two {
-  font-family: "Space Grotesk";
-  color: #010101;
-  font-size: 0.88rem;
-  margin-left: 2rem;
-  margin-right: 4rem;
-  margin-top: 0.5rem;
-  font-weight: 500
 }
 
 .careers-page-two {
@@ -2185,28 +2465,56 @@ input[type=email]:focus {
   border-radius: 10px;
 }
 
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  width: 60%;
+  max-width: 50%;
+  min-height: 80vh;
+  padding-bottom: 2.5rem;
+  margin: 0rem auto;
+}
+
+.blog-write {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.author-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  margin-bottom: 1.35rem;
+}
+
 .blog-page-one {
   display: flex;
   flex-direction: column;
-  margin-top: 3.25rem;
+  margin-top: 1.5rem;
   align-items: left;
   justify-content: flex-start;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
+  border: none;
 }
 
 .blogs-page-one {
   display: flex;
   flex-direction: column;
-  margin-top: 2.25rem;
+  margin-top: 0;
   align-items: center;
   justify-content: flex-start;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 1.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1.5px solid #000000;
+  padding-top: 1rem;
+  border-bottom: 0.25px solid #ebe3e3;
+  /* padding: 0.5rem; */
+  /* background-color: red; */
 }
 
 .blogs-page-one-end {
@@ -2244,8 +2552,8 @@ input[type=email]:focus {
   margin-right: 3rem;
   margin-bottom: 1rem;
   background-color: #244886;
-  min-height: 35vh;
-  padding: 2rem 1rem;
+  min-height: fit-content;
+  padding: 2rem;
 }
 
 .service-page-four {
@@ -2257,8 +2565,8 @@ input[type=email]:focus {
   margin-right: 3rem;
   margin-bottom: 3rem;
   background-color: #244886;
-  min-height: 35vh;
-  padding: 2rem 1rem;
+  min-height: fit-content;
+  padding: 2rem;
 }
 
 .service-header {
@@ -2266,13 +2574,14 @@ input[type=email]:focus {
   font-size: 2.5rem;
   font-weight: 600;
   color: #244886;
-  margin-bottom: 1.5rem
+  margin-bottom: .5rem
 }
 
 .service-header-two {
   font-family: Montserrat;
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .header-sam-p {
@@ -2287,6 +2596,12 @@ input[type=email]:focus {
   font-size: 2.25rem
 }
 
+.io-mails {
+  color: white;
+  font-size: 2.75rem
+}
+
+
 .service-page-three {
   display: flex;
   flex-direction: column;
@@ -2294,12 +2609,11 @@ input[type=email]:focus {
   justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
-  min-height: 35vh;
-  padding: 1rem;
+  min-height: fit-content;
+  padding: 2rem;
   background-color: #d6dbe6ea;
   margin-bottom: 1rem;
 }
-
 
 .blog-one-row {
   display: flex;
@@ -2311,14 +2625,15 @@ input[type=email]:focus {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1.2rem;
 }
 
 .last-bor-one {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
   max-width: 100%;
 }
 
@@ -2330,8 +2645,11 @@ input[type=email]:focus {
 
 .last-bor-two {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 20%;
 }
 
 .file-div {
@@ -2349,8 +2667,12 @@ input[type=email]:focus {
 input[type=file] {
   width: 100%;
   height: inherit;
-  /* background-color: red; */
   display: none;
+}
+
+.eli {
+  width: 2.5rem;
+  height: 2.65rem;
 }
 
 .bor-content {
@@ -2358,47 +2680,63 @@ input[type=file] {
   flex-direction: column;
   width: 73%;
   max-width: 75%;
-  min-height: 20vh;
+  min-height: fit-content;
 }
 
 .bor-content-row {
   display: flex;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 0.15rem;
+}
+
+.bor-con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+
 }
 
 .bor-image {
   max-width: 25%;
   width: 25%;
   height: 15vh;
-  background-image: url("Assets/lappy.png");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: contain;
+  /* background-image: url("Assets/lappy.png"); */
+  /* background-position: center !important; */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
 }
 
 .vas {
   font-family: Montserrat;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 1.5rem
+  margin-bottom: .5rem
 }
 
 .vas-white {
   font-family: Montserrat;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #000000;
-  margin-bottom: 1.5rem
+  margin-bottom: .5rem
+}
+
+.vas-white-mini {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: .5rem
 }
 
 .one-span {
   color: #010101;
-  font-size: 0.95rem;
-  font-weight: 500
+  font-size: 1.2rem;
+  font-weight: 400
 }
 
 .contact {
@@ -2414,6 +2752,13 @@ input[type=file] {
   margin-right: 0.75rem;
   font-weight: 600;
   font-size: 1rem
+}
+
+.outline-plu {
+  color: #244886;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  font-size: 1.3rem
 }
 
 .check-mark {
@@ -2435,8 +2780,9 @@ input[type=file] {
 .newly {
   font-family: Roboto;
   font-size: 1rem;
-  color: #010101;
+  color: #244886;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 800px) {

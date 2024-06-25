@@ -19,32 +19,43 @@ const Contact = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
 
-
+    // try {
+    //     await axios.get('http://127.0.0.1:8000/api/v1/jobs')
+    //         .then((res) => {
+    //             // res.json()
+    //             const data = res.data.data;
+    //             // console.log(res.data)
+    //             setMockdata(res.data.data);
+    //         })
+    // } catch (error) {
+    //     console.error(error);
+    // }
     async function onSubmit(e) {
         e.preventDefault();
+        try {
 
-        let url = `${process.env.REACT_APP_URL_NAME}/enquiries`;
+            let url = `${process.env.REACT_APP_URL_NAME}/enquiries`;
 
-        const userData = {
-            name: name,
-            email: email,
-            phone_number: phone,
-            message: message
-        };
+            const userData = {
+                name: name,
+                email: email,
+                phone_number: phone,
+                message: message
+            };
 
-        axios.post(url, userData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        }).then((response) => {
-            setErrorMessage("")
-            // console.log(response.data.message);
-            setIsSuccessOpen(!isSuccessOpen);
-        }).catch(error => {
-            console.error(error)
-            setErrorMessage(error.data.message)
-        });
-    };
+            axios.post(url, userData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }).then((response) => {
+                setErrorMessage("")
+                // console.log(response.data.message);
+                setIsSuccessOpen(!isSuccessOpen);
+            })
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     return (
         <div className='contact-contents'>
@@ -76,13 +87,12 @@ const Contact = () => {
                     border: "none",
                     borderBottom: "1px solid #8D8D8D",
                     height: "10rem",
-                    padding: "1rem"
+                    padding: "1rem",
+                    marginBottom: "2rem"
 
-                }} placeholder='Write your message..' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
-                {/* <input  /> */}
+                }} placeholder='Write your message...' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
 
-                {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
-                <input type="submit" value="Send Message " />
+                <input type="submit" value="Send Message" />
             </form>
             <Success isOpen={isSuccessOpen} onClose={
                 () => {
@@ -128,6 +138,6 @@ const Contact = () => {
             </Failed>
         </div >
     )
-}
 
-export default Contact
+}
+export default Contact;

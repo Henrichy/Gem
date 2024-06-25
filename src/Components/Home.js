@@ -18,20 +18,6 @@ import Cyber from "../Assets/cybersecurity.png";
 
 
 const Home = () => {
-    useEffect(() => {
-        const script = document.createElement('script');
-
-        script.src = "./Script.js";
-        script.type = "text/jsx";
-        script.async = true;
-
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        }
-    }, []);
-
 
     return (
         <div className='home-container'>
@@ -41,16 +27,15 @@ const Home = () => {
                     <motion.div initial={{ x: -100, opacity: 0 }} animate={{
                         opacity: 1,
                         x: 0
-                    }}
-                        transition={{
-                            x: { type: "spring", stiffness: 60 },
-                            opacity: { duration: 1 },
-                            ease: "easeIn",
-                            delay: .025,
-                            duration: 0.35
-                        }} className='home-text'>
+                    }} transition={{
+                        x: { type: "spring", stiffness: 60 },
+                        opacity: { duration: 1 },
+                        ease: "easeIn",
+                        delay: .025,
+                        duration: 0.35
+                    }} className='home-text'>
                         <h4 style={{
-                            color: "#223ac0",
+                            color: "#b3bcee",
                             fontWeight: 600
                         }}>Telecoms Value Added Service Aggregator</h4>
 
@@ -61,10 +46,10 @@ const Home = () => {
                                 color: "#083a8f",
                                 display: 'inline-block',
                                 wordWrap: 'break-word'
-                            }}> VAS and Bulk SMS</span> Solutions for Nigeria
+                            }}> VAS and Bulk SMS Solutions</span>  for Nigeria
                         </h2>
 
-                        <p style={{ color: "#ffffff", fontWeight: 500, marginTop: "1rem" }}>we empower businesses of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
+                        <p style={{ color: "#ffffff", fontWeight: 500, marginTop: "1rem" }}>We empower business of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
 
                         <div className='center-butt'>
                             <Link to="/services" element={<Service />} style={{ textDecoration: "none" }}>
@@ -94,7 +79,7 @@ const Home = () => {
                 </div>
 
                 <div className='header-one'>
-                    <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{
+                    <motion.h2 initial={{ y: -100, opacity: 0 }} whileInView={{
                         opacity: 1,
                         y: 0
                     }} transition={{
@@ -105,7 +90,7 @@ const Home = () => {
                         duration: 3
                     }}>
                         Businesses trust us for a reason. From <span style={{ color: "#244886" }}>retail </span>and <span style={{ color: "#244886" }}>cyber security</span> to the <span style={{ color: "#244886" }}>financial sector</span>, we deliver results.
-                    </motion.h3>
+                    </motion.h2>
                 </div>
 
                 <div className='slider'>

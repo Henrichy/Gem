@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPhone } from "react-icons/fa6";
-import { IoMailOpen } from "react-icons/io5";
+import { CiMail } from "react-icons/ci";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { CiFacebook } from "react-icons/ci";
@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='rowone-b'>
-                    <IoMailOpen className='io-mail' />
+                    <CiMail className='io-mails' />
                     <div className='row-content'>
                         <h3>contact@geminigroupng.com</h3>
                     </div>
@@ -85,9 +85,7 @@ const Footer = () => {
                         <Link to="/careers" element={<Careers />} style={{ textDecoration: "none" }}>
                             <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Career</li>
                         </Link>
-                        {/* <a target="_blank" href="http://www.testadmin.geminigroupng.com/" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                            <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Admin</li>
-                        </a> */}
+
                         <Link to="/privacy" element={<Privacy />} style={{ textDecoration: "none" }}>
                             <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Privacy</li>
                         </Link>
