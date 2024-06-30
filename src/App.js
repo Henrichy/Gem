@@ -38,7 +38,7 @@ function App() {
             <Route path='/blogs/:blog' element={<Inblog />} />
             <Route path='/contact-us' element={<Contacts />} />
             <Route path='/careers' element={<Careers />} />
-            <Route path='/careers/career' element={<InCareer />} />
+            <Route path='/careers/:career' element={<InCareer />} />
             <Route path='/admin/login' element={<Login />} />
             <Route path='/privacy' element={<Privacy />} />
           </Routes>

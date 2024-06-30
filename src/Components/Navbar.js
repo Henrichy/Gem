@@ -88,11 +88,9 @@ const Navbar = () => {
             <div className="nav-logo-container">
                 <Link to="/" element={<Home />} style={{ textDecoration: "none" }}>
                     <img style={{
-                        objectFit: "contain",
-                        height: "3.5rem"
+                        objectFit: "contain"
                     }} src={Logo} alt="" />
                 </Link>
-
             </div>
             <div className="navbar-links-container">
                 <NavLink to="/" style={{ fontSize: "1.2rem" }} element={<Home />}>

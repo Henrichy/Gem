@@ -17,7 +17,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [email, setEmail] = useState('');
-    // const [emailError, setEmailError] = useState(false);
+    const [submit, setSubmit] = useState(false);
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     };
@@ -53,10 +53,9 @@ const Login = () => {
             saveSessionData('token', response.data.token);
             // console.log(response.status, response.data.token, response.data.message, response.data.user);
             window.location.href = "http://www.testadmin.geminigroupng.com/";
-        }).catch(err => {
-            console.error(err.response.data.message);
-            // alert(rat);
-            setErrorMessage(err.response.data.message)
+        }).catch(error => {
+            setSubmit(false);
+            setErrorMessage(error.toJSON().message);
             setIsFailedOpen(true);
         });
     };
@@ -75,8 +74,6 @@ const Login = () => {
                         <input placeholder='password' name="password" className='log-pass' type={passwordVisible ? "text" : "password"} minlength="7" required value={password} onChange={handlePass} />
                         <img src={passwordVisible ? eyeclosed : eyeopen} alt="" onClick={togglePasswordVisibility} />
                     </div>
-
-                    {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "0.75rem", marginBottom: "0.5rem", fontWeight: 600 }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
 
                     <h5 className='loga-head'>Forgot password?</h5>
 

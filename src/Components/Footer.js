@@ -13,7 +13,6 @@ import Abouts from './Abouts';
 import Service from './Service';
 import Blogs from './Blogs';
 import Careers from './Careers';
-import Admin from './Admin';
 import Privacy from './Privacy';
 
 
@@ -35,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='rowone-c'>
-                    <IoLocationSharp className='io-mail' />
+                    <IoLocationSharp className='io-mai' />
                     <div className='row-content'>
                         <h3>House 4, A close, off first Avenue Gwarimpa.</h3>
                         <h4>Abuja, Nigeria.</h4>

@@ -34,10 +34,7 @@ const Home = () => {
                         delay: .025,
                         duration: 0.35
                     }} className='home-text'>
-                        <h4 style={{
-                            color: "#b3bcee",
-                            fontWeight: 600
-                        }}>Telecoms Value Added Service Aggregator</h4>
+                        <h4>Telecoms Value Added Service Aggregator</h4>
 
                         <h2 className='hoht'>Reach More, Engage Better.</h2>
 
@@ -65,16 +62,57 @@ const Home = () => {
                             </Link>
                         </div>
                     </motion.div>
-                    <motion.div initial={{ x: 100, opacity: 0 }} animate={{
+                </div>
+                <div className='paid-one'>
+                    <motion.div initial={{ x: -100, opacity: 0 }} animate={{
                         opacity: 1,
                         x: 0
                     }} transition={{
                         x: { type: "spring", stiffness: 60 },
                         opacity: { duration: 1 },
                         ease: "easeIn",
-                        delay: 1,
-                        duration: 2
-                    }} className='home-image'>
+                        delay: .025,
+                        duration: 0.35
+                    }} className='home-text'>
+                        <h4>Telecoms Value Added Service Aggregator</h4>
+
+                        <h2 className='hoht'>Reach More, Engage Better.</h2>
+
+                        <h2 className='hohta'>
+                            Innovative <span style={{
+                                color: "#083a8f",
+                                display: 'inline-block',
+                                wordWrap: 'break-word',
+                            }}> VAS and Bulk SMS Solutions</span>  for Nigeria
+                        </h2>
+
+                        <p>We empower business of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
+
+                        <motion.div initial={{ x: 100, opacity: 0 }} animate={{
+                            opacity: 1,
+                            x: 0
+                        }} transition={{
+                            x: { type: "spring", stiffness: 60 },
+                            opacity: { duration: 1 },
+                            ease: "easeIn",
+                            delay: 1,
+                            duration: 2
+                        }} className='home-image'>
+                        </motion.div>
+
+                        <div className='center-butt'>
+                            <Link to="/services" element={<Service />} style={{ textDecoration: "none" }}>
+                                <button className="conta">
+                                    <span style={{
+                                        marginRight: ".5rem"
+                                    }}>
+                                        Learn More
+                                    </span> <FaArrowRightLong style={{
+                                        marginTop: ".15rem"
+                                    }} />
+                                </button>
+                            </Link>
+                        </div>
                     </motion.div>
                 </div>
 

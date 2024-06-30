@@ -1,12 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Elipses from "../Assets/elipses.png";
-import Sms from "../Assets/sms.jpg";
 import axios from "axios";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
-
+import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
 
 
 const Inblog = () => {
@@ -14,9 +13,8 @@ const Inblog = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const { blog } = useParams();
 
-
     useEffect(() => {
-        setData()
+        setData();
     }, [])
 
     async function setData() {
@@ -24,12 +22,13 @@ const Inblog = () => {
         try {
             await axios.get(URL)
                 .then((res) => {
-                    console.log(res.data.data);
+                    setErrorMessage("")
+                    // console.log(res.data.data);
                     setMockdata(res.data.data);
                 })
         } catch (error) {
-            console.error(error.message);
-            setErrorMessage(error.message);
+            // console.log(error.toJSON().message);
+            setErrorMessage(error.toJSON().message)
         }
     }
 
@@ -59,14 +58,12 @@ const Inblog = () => {
                 <div className='blog-hr'>
                 </div>
                 <img src={`http://127.0.0.1:8000/storage/${mockdata !== 'undefined' && mockdata.image}`} className='sms' alt="sms"></img>
-                {/* <img src={Sms} ></img> */}
+
                 <p className="blog-write">
-                    {mockdata !== 'undefined' && mockdata.body}
+                    {mockdata !== 'undefined' && <FroalaEditorView model={mockdata.body} />}
                 </p>
+
             </div>
-
-
-
 
             <Footer />
         </div>

@@ -7,7 +7,12 @@ import { useNavigate } from 'react-router-dom';
 import fail from "../Assets/failed.png";
 import axios from 'axios';
 import Failed from "./Failed";
+import SimpleBackdrop from './SimpleBackdrop';
+import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+import 'froala-editor/js/plugins/image.min.js';
 
+import FroalaEditorComponent from 'react-froala-wysiwyg';
 
 const Contact = () => {
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
@@ -17,25 +22,14 @@ const Contact = () => {
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [submit, setSubmit] = useState(false);
     const navigate = useNavigate();
 
-    // try {
-    //     await axios.get('http://127.0.0.1:8000/api/v1/jobs')
-    //         .then((res) => {
-    //             // res.json()
-    //             const data = res.data.data;
-    //             // console.log(res.data)
-    //             setMockdata(res.data.data);
-    //         })
-    // } catch (error) {
-    //     console.error(error);
-    // }
     async function onSubmit(e) {
         e.preventDefault();
+        setSubmit(true);
         try {
-
             let url = `${process.env.REACT_APP_URL_NAME}/enquiries`;
-
             const userData = {
                 name: name,
                 email: email,
@@ -43,17 +37,20 @@ const Contact = () => {
                 message: message
             };
 
-            axios.post(url, userData, {
+            await axios.post(url, userData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
             }).then((response) => {
-                setErrorMessage("")
-                // console.log(response.data.message);
+                setErrorMessage("");
+                setSubmit(false);
                 setIsSuccessOpen(!isSuccessOpen);
             })
         } catch (error) {
-            console.error(error);
+            setSubmit(false);
+            console.log(error.toJSON());
+            setErrorMessage(error.toJSON().message);
+            setIsFailedOpen(true);
         }
     }
 
@@ -75,7 +72,6 @@ const Contact = () => {
 
                 <input type="email" placeholder='Email *' name="emailaddress" required value={email} onChange={(e) => setEmail(e.target.value)} />
 
-
                 <input type="tel" required placeholder='Phone number *' name="phonenumber" value={phone} onChange={(e) => setPhone(e.target.value)} />
 
                 <label style={{
@@ -83,6 +79,9 @@ const Contact = () => {
                     fontSize: "0.75rem",
                     color: "#8D8D8D"
                 }}>Message <span style={{ color: "red" }}>*</span></label>
+                {/* <FroalaEditorComponent tag='textarea' config={{
+                    placeholderText: "Write blog body here..."
+                }} /> */}
                 <textarea style={{
                     border: "none",
                     borderBottom: "1px solid #8D8D8D",
@@ -92,7 +91,7 @@ const Contact = () => {
 
                 }} placeholder='Write your message...' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
 
-                <input type="submit" value="Send Message" />
+                <input type="submit" className={submit ? 'contact-sum' : 'contact-sub'} value="Send Message" />
             </form>
             <Success isOpen={isSuccessOpen} onClose={
                 () => {
@@ -115,6 +114,8 @@ const Contact = () => {
                     }
                 }>close this window</button>
             </Success>
+
+            {submit && <SimpleBackdrop />}
 
             <Failed isOpen={isFailedOpen} onClose={
                 () => {

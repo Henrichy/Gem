@@ -46,7 +46,6 @@ body {
   color: #000000;
 }
 
-
 .head-two {
   text-align: left;
   font-family: Montserrat;
@@ -62,8 +61,8 @@ nav {
   min-height: 75px;
   border-bottom: 3px solid #d1d1d1;
   background-color: #ffffff;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
 }
 
 .header-sam-two {
@@ -106,8 +105,6 @@ nav {
 }
 
 .home-contents {
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,6 +142,13 @@ nav {
 }
 
 .home-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hold-container {
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -300,14 +304,17 @@ nav {
   width: 100%;
   max-width: 100%;
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .blog-case-left {
-  width: 68%;
+  width: 90%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 4rem;
+  padding-top: 2rem;
+  margin: 0px auto;
 }
 
 .trends {
@@ -417,7 +424,6 @@ nav {
   font-size: 2.75rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-
 }
 
 
@@ -441,7 +447,7 @@ nav {
   max-width: 50%;
   color: #000000;
   font-size: 0.88rem;
-  text-align: cen;
+  text-align: center;
 }
 
 .contact-form {
@@ -473,9 +479,19 @@ nav {
   margin-left: 1.5rem;
 }
 
-input[type=submit] {
+.contact-sub {
   margin-top: 0.8rem;
   background-color: #244886;
+  border-style: none;
+  height: 3rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-sum {
+  margin-top: 0.8rem;
+  background-color: #9fb2d1;
   border-style: none;
   height: 3rem;
   color: #ffffff;
@@ -533,7 +549,6 @@ input[type=submit] {
   font-weight: 500;
   border-radius: 5px;
 }
-
 
 .career-red {
   margin-top: 0.8rem;
@@ -780,7 +795,7 @@ input[type=email]:focus {
   align-items: flex-start;
   width: 93%;
   max-width: 93%;
-  margin-top: 10vh;
+  margin-top: 3rem;
 }
 
 .blog-details {
@@ -851,13 +866,7 @@ input[type=email]:focus {
   text-align: center;
 }
 
-.service-header-one h2 {
-  color: #244886;
-  font-size: 2.45rem;
-  margin-top: 0.75rem;
-  font-family: Montserrat;
-  text-align: center;
-}
+
 
 .service-header-one h5 {
   color: #000000;
@@ -953,6 +962,10 @@ input[type=email]:focus {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   padding-top: 3rem;
+}
+
+.paid-one {
+  display: none;
 }
 
 .abouts-page-one {
@@ -1132,9 +1145,12 @@ input[type=email]:focus {
 }
 
 .nav-logo-container {
-  width: 14%;
-  max-width: 15%;
+  width: 15%;
+  max-width: 18%;
   display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: red; */
 }
 
 .serve-image {
@@ -1198,7 +1214,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #190879;
+  background-color: #391fcc;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -1212,7 +1228,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #190879;
+  background-color: #391fcc;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -1226,7 +1242,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #190879;
+  background-color: #391fcc;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -1351,8 +1367,8 @@ input[type=email]:focus {
 
 .home-text h4 {
   font-size: 1rem;
-  color: #244886;
-  font-weight: 500;
+  color: #b3bcee;
+  font-weight: 600;
 }
 
 .home-image {
@@ -1365,7 +1381,6 @@ input[type=email]:focus {
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 0;
-  display: none;
 }
 
 .home-text h1 {
@@ -1390,11 +1405,11 @@ input[type=email]:focus {
 }
 
 .home-text p {
-  margin-top: 0.755rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-  color: #2E2D2D;
+  color: #ffffff;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar-menu-container {
@@ -1405,8 +1420,7 @@ input[type=email]:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 40%;
-
+  max-width: 38%;
 }
 
 .contact-button {
@@ -1538,10 +1552,32 @@ input[type=email]:focus {
   display: flex;
   white-space: nowrap;
   margin-top: 1rem;
-  /* right: 0; */
 }
 
 .about-button:hover {
+  background-color: #376dca;
+  color: #ffffff;
+}
+
+
+.about-butt {
+  padding: 0.9rem 1.2rem;
+  background-color: white;
+  color: #010101;
+  border: 0.75px solid #0E0E0E;
+  border-radius: 5px;
+  font-size: 1.13rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  height: 3rem;
+  width: fit-content;
+  display: flex;
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+
+.about-butt:hover {
   background-color: #376dca;
   color: #ffffff;
 }
@@ -1588,7 +1624,7 @@ input[type=email]:focus {
 }
 
 .overlay-body {
-  text-align: center;
+  text-align: center !important;
   margin-top: 0.5rem;
   margin-bottom: 0.65rem;
   font-size: .9rem;
@@ -1648,7 +1684,6 @@ input[type=email]:focus {
   margin-top: 2.75rem;
   margin-bottom: 3.25rem;
 }
-
 
 .expert-slider {
   display: flex;
@@ -1773,8 +1808,8 @@ input[type=email]:focus {
   width: 80%;
   max-width: 100%;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 3.5vh;
+  /* align-items: center; */
+  margin-top: 1rem;
 }
 
 .expert-content {
@@ -1824,7 +1859,6 @@ input[type=email]:focus {
   min-height: 20vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -1888,6 +1922,7 @@ input[type=email]:focus {
   font-size: 2.45rem;
   margin-bottom: 2.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .left-choose p {
@@ -1963,7 +1998,7 @@ input[type=email]:focus {
   color: #000000;
   font-weight: 400;
   margin-bottom: 0.35rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-family: Montserrat;
   justify-self: center;
   align-self: center;
@@ -2069,7 +2104,7 @@ input[type=email]:focus {
 
 
 .navbar-links-container a {
-  padding: 0 1rem 0 1rem;
+  padding: 0 .95rem 0 .95rem;
   text-decoration: none;
   color: black;
   font-size: 1rem;
@@ -2427,6 +2462,7 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .cpt-bone-one img {
@@ -2440,17 +2476,22 @@ input[type=email]:focus {
 .cpt-bone-two {
   width: 45%;
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .cpt-btwo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .cpt-bone {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -2471,7 +2512,7 @@ input[type=email]:focus {
   /* align-items: center; */
   justify-content: flex-start;
   width: 60%;
-  max-width: 50%;
+  max-width: 55%;
   min-height: 80vh;
   padding-bottom: 2.5rem;
   margin: 0rem auto;
@@ -2527,7 +2568,7 @@ input[type=email]:focus {
   margin-right: 4rem;
   margin-bottom: 4.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1.5px solid #000000;
+  /* border-bottom: 1.5px solid #000000; */
 }
 
 .blog-header-one {
@@ -2572,7 +2613,6 @@ input[type=email]:focus {
 .service-header {
   font-family: Montserrat;
   font-size: 2.5rem;
-  font-weight: 600;
   color: #244886;
   margin-bottom: .5rem
 }
@@ -2580,7 +2620,7 @@ input[type=email]:focus {
 .service-header-two {
   font-family: Montserrat;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -2592,6 +2632,11 @@ input[type=email]:focus {
 }
 
 .io-mail {
+  color: white;
+  font-size: 2.25rem
+}
+
+.io-mai {
   color: white;
   font-size: 2.25rem
 }
@@ -2699,10 +2744,18 @@ input[type=file] {
 
 }
 
+.service-header-one h2 {
+  color: #244886;
+  font-size: 2.45rem;
+  margin-top: 0.75rem;
+  font-family: Montserrat;
+  text-align: center;
+}
+
 .bor-image {
-  max-width: 25%;
+  max-width: 18%;
   width: 25%;
-  height: 15vh;
+  height: 13vh;
   /* background-image: url("Assets/lappy.png"); */
   /* background-position: center !important; */
   /* background-repeat: no-repeat; */
@@ -2740,11 +2793,11 @@ input[type=file] {
 }
 
 .contact {
-  width: 18%;
+  width: 17%;
   max-width: 20%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .outline-plus {
@@ -2834,9 +2887,9 @@ input[type=file] {
   }
 
   .home-contents {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    margin-top: 1.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 1.65rem;
   }
 
   .abouts-page-one {
@@ -2851,15 +2904,11 @@ input[type=file] {
     padding-bottom: 1rem;
   }
 
-  .home-text h2 {
-    margin-top: 0rem;
-    font-size: 2.15rem;
-  }
-
   .home-text h4 {
     font-size: 0.65rem;
     text-align: left !important;
     justify-self: left;
+    margin-bottom: 1rem;
   }
 
   .home-text h1 {
@@ -2870,27 +2919,32 @@ input[type=file] {
   }
 
   .page-one {
-    flex-direction: column;
-    justify-content: flex-start;
+    display: none;
   }
 
   .home-text {
     width: 100%;
     max-width: 100%;
-    min-height: 30vh;
+    min-height: 10vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .home-image {
-    width: 99%;
+    width: 100%;
     max-width: 100%;
     min-height: 15rem;
     margin-top: 1rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    background-image: url("Assets/back.jpg");
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .home-text p {
-    color: #6B6B6B;
-    font-size: 0.8rem;
+    color: #1f1d1d;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.35rem;
   }
@@ -2902,6 +2956,9 @@ input[type=file] {
   .header-one {
     margin-top: 0;
     margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
   }
 
   .header-one h3 {
@@ -2915,7 +2972,7 @@ input[type=file] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0.8;
   }
 
   .about-contents {
@@ -2949,12 +3006,14 @@ input[type=file] {
   .slider {
     display: flex;
     flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .unit {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .one-body {
@@ -2974,6 +3033,21 @@ input[type=file] {
 
   .about-text h2 {
     font-size: 2rem;
+  }
+
+  .service-header-one h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+
+  .service-header-one h5 {
+    color: #000000;
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    font-family: Montserrat;
+    text-align: center;
   }
 
   .about-text p {
@@ -3075,12 +3149,13 @@ input[type=file] {
     margin-bottom: 0.5rem;
   }
 
-  .service-header-one h2 {
-    text-align: left;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: 0;
+  .header-one h2 {
+    font-size: 1.75rem;
+    width: 100%;
+    text-align: center;
   }
+
+
 
   .service-slider {
     flex-direction: column;
@@ -3119,10 +3194,12 @@ input[type=file] {
   }
 
   .choose-page {
-    margin-bottom: 5vh;
+    margin-bottom: 0rem;
     min-height: 20vh;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 1.2rem;
+    align-items: left;
   }
 
   .left-choose {
@@ -3142,8 +3219,8 @@ input[type=file] {
   .left-choose p {
     font-size: 1rem;
     margin-bottom: 0rem;
+    text-align: left;
   }
-
 
   .right-choose {
     width: 100%;
@@ -3177,9 +3254,13 @@ input[type=file] {
     max-width: 100;
   }
 
+  .expert-page {
+    margin-top: 2rem;
+  }
+
   .expert-page h2 {
     font-size: 2rem;
-    margin-bottom: 1.5vh;
+    margin-bottom: .6rem;
     text-align: center;
   }
 
@@ -3195,7 +3276,7 @@ input[type=file] {
     align-items: flex-start;
     width: 100%;
     max-width: 100%;
-    margin-top: 5vh;
+    margin-top: 2rem;
   }
 
   .expert-one {
@@ -3260,14 +3341,14 @@ input[type=file] {
     align-items: center;
     width: 95%;
     max-width: 95%;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .blog-one {
     width: 100%;
     max-width: 100%;
     min-height: 20vh;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .blog-two {
@@ -3296,6 +3377,7 @@ input[type=file] {
     width: 100%;
     max-width: 100%;
     margin-right: 0;
+    margin-top: 0;
   }
 
   .rowtwo-c {
@@ -3322,6 +3404,14 @@ input[type=file] {
     text-align: left;
   }
 
+  .eliminate-white-mini {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1rem
+  }
+
+
   .contact-form {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -3337,6 +3427,10 @@ input[type=file] {
     padding: 0.9rem;
     margin-bottom: 0.8rem;
     text-align: left;
+  }
+
+  .expert-info {
+    margin-top: 0.75;
   }
 
   .styled-input-one {
@@ -3408,7 +3502,8 @@ input[type=file] {
     width: 100%;
     max-width: 100%;
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    justify-content: flex-start;
   }
 
   .footer-hr {
@@ -3432,19 +3527,22 @@ input[type=file] {
     width: 100%;
     max-width: 100%;
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    justify-content: flex-start;
   }
 
   .rowone-c {
     width: 100%;
     max-width: 100%;
     display: flex;
+    justify-content: flex-start;
   }
 
   .row-content {
     display: flex;
     flex-direction: column;
     margin-left: 0.5rem;
+    width: 80%;
   }
 
   .location-dot {
@@ -3466,12 +3564,21 @@ input[type=file] {
     font-size: 1rem;
   }
 
+  .io-mai {
+    font-size: 1.4rem;
+  }
+
+  .io-mails {
+    font-size: 1.2rem;
+  }
+
   .footer-contents {
     min-height: 100vh;
     background-color: #244886;
     padding-top: 2.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 2.5rem;
   }
 
   .rowtwo-a {
@@ -3482,8 +3589,8 @@ input[type=file] {
     justify-content: flex-start;
     align-items: left;
     margin-right: 0rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .rowtwo-a p {
@@ -3496,8 +3603,8 @@ input[type=file] {
     align-items: left;
     width: 100%;
     max-width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .career-label {
@@ -3634,7 +3741,7 @@ input[type=file] {
   }
 
   .service-header-two {
-    font-size: 1rem;
+    font-size: .85rem;
   }
 
   .service-page-two {
@@ -3687,26 +3794,32 @@ input[type=file] {
   }
 
   .vas {
-    font-size: .6rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 700;
     margin-bottom: .75rem
   }
 
   .vas-white {
-    font-size: .6rem;
-    font-weight: 600;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: .75rem
+  }
+
+  .vas-white-mini {
+    font-size: .7rem;
+    font-weight: 700;
     margin-bottom: .75rem
   }
 
   .eliminate {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #ffffff;
     margin-bottom: 1rem
   }
 
   .eliminate-white {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     font-weight: 500;
     color: #000000;
     margin-bottom: 1rem
@@ -3717,6 +3830,13 @@ input[type=file] {
     margin-left: 1.1rem;
     margin-right: 1.1rem;
     margin-bottom: 1.5rem;
+  }
+
+  .blog-page {
+    width: 80%;
+    max-width: 80%;
+    min-height: 50vh;
+    padding-bottom: 2.5rem;
   }
 
   .blog-header-one h5 {
@@ -3748,7 +3868,7 @@ input[type=file] {
     margin-right: 1.1rem;
     margin-bottom: 2rem;
     padding-bottom: 0rem;
-    border-bottom: 1.5px solid #000000;
+    /* border-bottom: 1.5px solid #000000; */
   }
 
   .blogs-page-one-end {
@@ -3789,7 +3909,8 @@ input[type=file] {
   }
 
   .writer-two {
-    display: none;
+    font-size: 0.6rem;
+    margin-left: 0.5rem;
   }
 
   .new-sms {
@@ -3805,13 +3926,14 @@ input[type=file] {
 
   .last-bor {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .header-five {
     font-family: "Space Grotesk";
     color: #010101;
-    font-size: 0.75rem;
-    margin-left: 0.75rem;
+    font-size: 0.65rem;
+    /* margin-left: 0.75rem; */
   }
 
   .contact-contents {
@@ -3922,12 +4044,21 @@ input[type=file] {
     text-align: left !important;
   }
 
+  .privacy-contents {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
   .file-div {
     height: 6rem;
     width: 80%;
     border: 2.5px dashed #D0D5DD;
     border-radius: 5px;
     margin-left: .5rem;
+  }
+
+  .about-butt {
+    display: none;
   }
 
   .head-six {
@@ -3986,6 +4117,16 @@ input[type=file] {
     margin-bottom: .45rem;
   }
 
+  .expert-page h5 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    font-family: Montserrat;
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+  }
+
   .head-first {
     font-size: .92rem;
     margin-top: 1.2rem;
@@ -4027,6 +4168,27 @@ input[type=file] {
     margin-bottom: 0;
   }
 
+  .serve-list li {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 0.35rem;
+    font-size: 0.68rem;
+    font-family: Montserrat;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .serve-list-white li {
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 0.35rem;
+    font-size: 0.68rem;
+    font-family: Montserrat;
+    justify-self: center;
+    align-self: center;
+  }
+
+
   .career-form input[type=submit] {
     margin-top: 0.8rem;
     background-color: #244886;
@@ -4040,6 +4202,17 @@ input[type=file] {
     margin-bottom: 0;
     font-weight: 500;
     border-radius: 5px;
+  }
+
+  .paid-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
   }
 
   .file-upload {
@@ -4095,6 +4268,58 @@ input[type=file] {
     margin-bottom: 2rem;
   }
 
+  .hoht {
+    margin-top: 0rem;
+    font-size: 2.15rem;
+    font-family: Montserrat;
+    color: #000000
+  }
+
+  .hohta {
+    margin-top: 0.5rem;
+    font-size: 1.85rem;
+    font-family: Montserrat;
+    color: #000000;
+  }
+
+  .choose-page h2 {
+    color: #244886;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-align: left !important;
+    justify-self: left !important;
+  }
+
+  .blogs-header {
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-case-left {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    padding-top: 1.125rem;
+    margin: 0px auto;
+  }
+
+  .choose-row {
+    margin-top: 0.5rem;
+    flex-direction: column;
+  }
+
+  .last-bor-two {
+    display: none;
+  }
+
+  .last-bor-one {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 350px) {

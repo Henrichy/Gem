@@ -11,15 +11,13 @@ import { MdCloudUpload } from "react-icons/md";
 import Success from './Success';
 import Man from "../Assets/3dman.jpg";
 import { motion } from 'framer-motion';
-import errorImage from "../Assets/errorImage.png";
 import axios from 'axios';
-import { saveSessionData } from './helpers/SessionHelper';
-import { useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
-import { AppContext } from '../App';
 import { getSessionData } from './helpers/SessionHelper';
 import Failed from "./Failed";
 import fail from "../Assets/failed.png";
+import { useParams } from 'react-router-dom';
+import SimpleBackdrop from './SimpleBackdrop';
+import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
 
 
 const InCareer = () => {
@@ -34,9 +32,8 @@ const InCareer = () => {
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [isFailedOpen, setIsFailedOpen] = useState(false);
-    const navigate = useNavigate();
-    const { value } = useContext(AppContext);
-    const [jobid, setJobid] = value;
+    const { career } = useParams();
+    const [submit, setSubmit] = useState(false);
 
 
     useEffect(() => {
@@ -46,49 +43,50 @@ const InCareer = () => {
     async function setData() {
         let job = getSessionData('jobid')
         job = parseInt(job);
-        const URL = "http://127.0.0.1:8000/api/v1/jobs/" + job;
+        const URL = "http://127.0.0.1:8000/api/v1/jobs/" + career;
         try {
             await axios.get(URL)
                 .then((res) => {
+                    setErrorMessage("")
                     // const data = res.data.data;
                     setMockdata(res.data.data);
                 })
         } catch (error) {
-            console.error(error.message);
-            setErrorMessage(error.message)
+            // console.log(error.toJSON().message);
+            setErrorMessage(error.toJSON().message);
         }
     }
 
     async function onSubmit(e) {
         e.preventDefault();
-        let url = `${process.env.REACT_APP_URL_NAME}/applicants`;
-        const JobID = mockdata.id;
+        setSubmit(true);
+        try {
+            let url = `${process.env.REACT_APP_URL_NAME}/applicants`;
+            const JobID = mockdata.id;
 
+            const formData = new FormData();
 
-        const formData = new FormData();
+            formData.append("first_name", firstname)
+            formData.append("last_name", lastname)
+            formData.append("email", email)
+            formData.append("resume", resume)
+            formData.append("job_id", JobID)
+            formData.append("cover_letter", cover)
 
-        formData.append("first_name", firstname)
-        formData.append("last_name", lastname)
-        formData.append("email", email)
-        formData.append("resume", resume)
-        formData.append("job_id", JobID)
-        // formData.append("job_title", "Office 365 Manager") //change to job_id
-        formData.append("cover_letter", cover)
-
-        await axios.post(url, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        }).then((response) => {
-            setErrorMessage("")
-            // console.log(response.data.message);
-            setIsSuccessOpen(!isSuccessOpen);
-        }).catch(err => {
-            const rat = err.response.data.message;
-            console.error(err.response.data.message);
-            // alert(rat);
-            setErrorMessage(err.response.data.message)
-        });
+            await axios.post(url, formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }).then((response) => {
+                setErrorMessage("")
+                setSubmit(false);
+                setIsSuccessOpen(!isSuccessOpen);
+            })
+        } catch (error) {
+            setSubmit(false);
+            setErrorMessage(error.toJSON().message);
+            setIsFailedOpen(true);
+        }
     };
 
     const handleFile = (event) => {
@@ -121,15 +119,8 @@ const InCareer = () => {
                     <h2 className='first-header'>{mockdata !== 'undefined' && mockdata.title}</h2>
                     <h4 className='second-header'>Who Are We Looking For</h4>
                     <ul className='first-list'>
-                        <li> <RxDotFilled /> {mockdata !== 'undefined' && mockdata.description}</li>
-                        <li> <RxDotFilled /> Nullam dictum ligula a gravida porta.</li>
-                        <li> <RxDotFilled /> Nam pellentesque orci ut odio blandit, sit amet elementum augue venenatis.</li>
-                        <li> <RxDotFilled /> Vivamus semper magna suscipit leo malesuada, eu dictum velit varius.</li>
-                        <li> <RxDotFilled /> Nulla non enim eu quam rutrum dictum in non urna.</li>
-                        <li> <RxDotFilled /> Integer et felis a purus convallis condimentum nec vel eros.</li>
-                        <li><RxDotFilled /> Vestibulum porta libero nec aliquet blandit.</li>
-                        <li> <RxDotFilled /> Duis pretium sapien vitae felis tincidunt lobortis vel et urna</li>
-                        <li> <RxDotFilled /> Cras ut erat eu ante suscipit rutrum.</li>
+                        <li>{mockdata !== 'undefined' && <FroalaEditorView model={mockdata.description} />}</li>
+
                     </ul>
 
                     <h3 className='head-first'>
@@ -274,11 +265,9 @@ const InCareer = () => {
                     </div>
                 </div>
 
-                {/* {errorMessage && <div style={{ color: "#f56a6a", fontSize: "1.5rem", marginBottom: "0.5rem", fontWeight: 600, alignSelf: "center", marginTop: "2rem" }} dangerouslySetInnerHTML={{ __html: errorMessage }}></div>} */}
-
                 <input type='submit' value='Apply Now' />
             </form>
-
+            {submit && <SimpleBackdrop />}
             <Success isOpen={isSuccessOpen} onClose={
                 () => {
                     setIsSuccessOpen(!isSuccessOpen)

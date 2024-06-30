@@ -7,7 +7,7 @@ import Footer from './Footer';
 
 const Privacy = () => {
     return (
-        <div className='home-container'>
+        <div className='hold-container'>
             <Navbar />
             <div className='privacy-contents'>
                 <motion.h2 initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{

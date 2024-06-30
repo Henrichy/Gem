@@ -104,7 +104,7 @@ const Services = () => {
                         </p>
 
                         <Link to="/contact-us" element={<Contacts />} style={{ textDecoration: "none" }}>
-                            <button className="about-button">
+                            <button className="about-butt">
                                 <span style={{
                                     marginRight: ".5rem"
                                 }}>
@@ -177,7 +177,7 @@ const Services = () => {
                                 flexDirection: 'column'
                             }}>
                                 <h3>Fidel Abowei</h3>
-                                <h5 className='expert-hid'>CO-founder & COO</h5>
+                                <h5 className='expert-hid'>CO-founder</h5>
                             </div>
                             <IoLogoLinkedin style={{
                                 fontSize: "2.5rem",

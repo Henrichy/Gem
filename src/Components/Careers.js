@@ -4,14 +4,9 @@ import Teamwork from "../Assets/teamss.png";
 import { FaLocationDot } from "react-icons/fa6";
 import Contact from './Contact';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
-import InCareer from './InCareer';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useContext } from 'react';
-import { AppContext } from '../App';
-import { saveSessionData } from './helpers/SessionHelper';
 import Trusted from "../Assets/trusted.png";
 import Learn from "../Assets/learn.png";
 import Skills from "../Assets/skills.png";
@@ -19,9 +14,7 @@ import Skills from "../Assets/skills.png";
 
 const Careers = () => {
     const [mockdata, setMockdata] = useState([]);
-    const { value } = useContext(AppContext);
-    const [jobid, setJobid] = value;
-
+    const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
         setData()
@@ -31,13 +24,13 @@ const Careers = () => {
         try {
             await axios.get('http://127.0.0.1:8000/api/v1/jobs')
                 .then((res) => {
+                    setErrorMessage("")
                     // res.json()
                     const data = res.data.data;
-                    // console.log(res.data)
-                    setMockdata(res.data.data);
+                    setMockdata(res.data.data.reverse());
                 })
         } catch (error) {
-            console.error(error);
+            setErrorMessage(error.toJSON().message);
         }
     }
 
@@ -59,7 +52,7 @@ const Careers = () => {
                         delay: 0.0008,
                         duration: 0.9
                     }} className='head-one'>Career at Gemini</motion.h2>
-                    <h3 className='head-two'>Shape the Future with Us</h3>
+                    <h4 className='head-two'>Shape the Future with Us</h4>
                     <p className='one-body'>
                         <strong>Are you a passionate individual who thrives in a collaborative environment? </strong>Do you seek constant learning and growth opportunities? Then look no further! At Gemini we are constantly searching for passionate and talented individuals to help us drive innovation and make real impact.
                     </p>
@@ -193,9 +186,7 @@ const Careers = () => {
                                 justifyContent: "center"
                             }}>
                                 <button onClick={() => {
-                                    saveSessionData('jobid', job)
-                                    window.location.href = "http://localhost:3000/careers/career";
-
+                                    window.location.href = `http://localhost:3001/careers/${job}`;
                                 }} className='apply-button'>
                                     Apply Now
                                 </button>
@@ -203,8 +194,6 @@ const Careers = () => {
                         </motion.div>
                     );
                 })}
-
-                {/*  */}
             </div>
             <Contact />
             <Footer />
