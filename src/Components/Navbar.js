@@ -23,6 +23,7 @@ import Blogs from "./Blogs";
 import Contacts from "./Contacts";
 import Careers from "./Careers";
 import { motion } from "framer-motion";
+import Headroom from "react-headroom";
 
 
 
@@ -84,6 +85,7 @@ const Navbar = () => {
     ];
 
     return (
+        <Headroom>
         <nav>
             <div className="nav-logo-container">
                 <Link to="/" element={<Home />} style={{ textDecoration: "none" }}>
@@ -173,6 +175,8 @@ const Navbar = () => {
                 </Box>
             </Drawer>
         </nav >
+        </Headroom>
+
     )
 }
 
