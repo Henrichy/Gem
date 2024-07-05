@@ -2866,8 +2866,9 @@ input[type=file] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 75px;
+    min-height: fit-content;
     border-bottom: 3px solid #d1d1d1;
+    padding: 0.35rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -2882,8 +2883,8 @@ input[type=file] {
   }
 
   .nav-logo-container {
-    width: 22%;
-    max-width: 24%;
+    width: 45%;
+    max-width: 50%;
   }
 
   .home-contents {
