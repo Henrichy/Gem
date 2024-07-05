@@ -57,7 +57,7 @@ const Careers = () => {
                         delay: 0.0008,
                         duration: 0.9
                     }} className='head-one'>Career at Gemini</motion.h2>
-                    <h4 className='head-two'>Shape the Future with Us</h4>
+                    <h4 className='head-two' style={{color:'#083a8f'}}>Shape the Future with Us</h4>
                     <p className='one-body'>
                         <strong>Are you a passionate individual who thrives in a collaborative environment? </strong>Do you seek constant learning and growth opportunities? Then look no further! At Gemini we are constantly searching for passionate and talented individuals to help us drive innovation and make real impact.
                     </p>
@@ -75,9 +75,9 @@ const Careers = () => {
             <div className='careers-page-two'>
                 <div className='cpt-side-a'>
 
-                    <h3 className='head-three'>Why you Should Join Our Team</h3>
+                    <h3 className='head-three' style={{color:'#083a8f'}}>Why you Should Join Our Team</h3>
                     <p style={{
-                        fontFamily: "Rubik",
+                      
                         fontSize: ".88rem",
                         color: "#001833",
                         marginBottom: "1rem"
@@ -93,7 +93,7 @@ const Careers = () => {
                     <div className='cpt-bone'>
                         <motion.div whileHover={{ scale: 1.03 }} className='cpt-bone-one'>
                             <img className='team-work' src={Teamwork} alt="teamwork"></img>
-                            <h4 className='head-four'>
+                            <h4 className='head-four' style={{color:'#083a8f'}}>
                                 One Team
                             </h4>
                             <p className='two-body' >Work alongside inspiring colleagues: Be part of a passionate team dedicated to pushing boundaries and achieving excellence. Contribute to meaningful work that shapes the future of our industry.
@@ -101,7 +101,7 @@ const Careers = () => {
                         </motion.div>
                         <motion.div whileHover={{ scale: 1.03 }} className='cpt-bone-two'>
                             <img className='team-work' src={Trusted} alt="teamwork"></img>
-                            <h4 className='head-four'>
+                            <h4 className='head-four' style={{color:'#083a8f'}}>
                                 Career Growth
                             </h4>
                             <p className='two-body'>
@@ -113,7 +113,7 @@ const Careers = () => {
                     <div className='cpt-btwo'>
                         <motion.div whileHover={{ scale: 1.03 }} className='cpt-bone-one'>
                             <img className='team-work' src={Learn} alt="teamwork"></img>
-                            <h4 className='head-four'>
+                            <h4 className='head-four' style={{color:'#083a8f'}}>
                                 Learning and Development
                             </h4>
                             <p className='two-body'>
@@ -122,7 +122,7 @@ const Careers = () => {
                         </motion.div>
                         <motion.div whileHover={{ scale: 1.03 }} className='cpt-bone-two'>
                             <img className='team-work' src={Skills} alt="teamwork"></img>
-                            <h4 className='head-four'>
+                            <h4 className='head-four' style={{color:'#083a8f'}}>
                                 Flexibility
                             </h4>
                             <p className='two-body'>
@@ -134,7 +134,7 @@ const Careers = () => {
             </div >
 
             <div className='careers-page-three'>
-                <motion.h2 initial={{ scale: 0.05 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }} className='head-five'>Open Roles</motion.h2>
+                <motion.h2 initial={{ scale: 0.05 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }} className='head-five' style={{color:'#083a8f'}}>Open Roles</motion.h2>
                 {errorMessage ? (
                     <div>{errorMessage}</div>
                 ) : (

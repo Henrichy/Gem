@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, Roboto !important;
+  /*font-family: Montserrat, Roboto !important;*/
 }
 
 img {
@@ -27,14 +27,14 @@ body {
 
 .head-one {
   text-align: left;
-  font-family: Montserrat;
+  
   font-size: 2.88rem;
   color: #244886;
   margin-bottom: 1rem
 }
 
 .head-on {
-  font-family: Montserrat;
+  
   font-size: 2.88rem;
   color: #244886;
   margin-bottom: 0.5rem
@@ -42,14 +42,14 @@ body {
 
 .one-body {
   text-align: left;
-  font-family: Montserrat;
+  
   font-size: 1.5rem;
   color: #000000;
 }
 
 .head-two {
   text-align: left;
-  font-family: Montserrat;
+  
   font-size: 1.75rem;
   color: #000000;
   margin-bottom: 1.5rem
@@ -67,7 +67,7 @@ nav {
 }
 
 .header-sam-two {
-  font-family: Montserrat;
+  
   font-size: 1.6rem;
   font-weight: 600;
   color: #000000;
@@ -75,7 +75,7 @@ nav {
 }
 
 .blog-summary {
-  font-family: Montserrat;
+  
   font-size: 0.9rem;
   font-weight: 400;
   color: #000000;
@@ -83,7 +83,7 @@ nav {
 }
 
 .new-sms {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #244886;
   font-size: 1.3rem;
   font-weight: 700;
@@ -92,7 +92,7 @@ nav {
 }
 
 .header-sam-three {
-  font-family: Montserrat;
+  
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1.35rem;
@@ -100,7 +100,7 @@ nav {
 }
 
 .header-sam-three-p {
-  font-family: Montserrat;
+  
   font-size: 1.35rem;
   font-weight: 400;
 }
@@ -195,7 +195,7 @@ nav {
 }
 
 .log-lab {
-  font-family: "poppins";
+/*font-family: "poppins";*/
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
   font-weight: 500;
@@ -247,14 +247,14 @@ nav {
 }
 
 .login-head {
-  font-family: "IBM Plex Sans ";
+  /*font-family: "IBM Plex Sans ";*/
   font-size: 1.85rem;
   margin-bottom: 3rem;
   color: #244886;
 }
 
 .login-heads {
-  font-family: "IBM Plex Sans ";
+  /*font-family: "IBM Plex Sans ";*/
   font-size: 1.12rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -384,7 +384,7 @@ nav {
 }
 
 .eliminate {
-  font-family: Montserrat;
+  
   font-size: 1.1rem;
   font-weight: 500;
   color: #ffffff;
@@ -392,7 +392,7 @@ nav {
 }
 
 .eliminate-white {
-  font-family: Montserrat;
+  
   font-size: 1.1rem;
   font-weight: 500;
   color: #000000;
@@ -400,7 +400,7 @@ nav {
 }
 
 .eliminate-white-mini {
-  font-family: Montserrat;
+  
   font-size: 0.9rem;
   font-weight: 500;
   color: #000000;
@@ -421,7 +421,7 @@ nav {
 }
 
 .blogs-header {
-  font-family: Montserrat;
+  
   font-size: 2.75rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -473,7 +473,7 @@ nav {
 }
 
 .header-five {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #010101;
   font-size: 0.81rem;
   font-weight: 300;
@@ -519,7 +519,7 @@ nav {
 
 .over-head {
   color: #244886;
-  font-family: Montserrat;
+  
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -659,7 +659,7 @@ input[type=email]:focus {
 .rowtwo-a p {
   color: #ffffff;
   margin-top: 0;
-  font-family: "Istok Web";
+  /*font-family: "Istok Web";*/
   font-size: 1.053rem;
   font-weight: 300;
   text-align: left;
@@ -675,7 +675,7 @@ input[type=email]:focus {
 
 .rowtwolist li {
   color: #ffffff;
-  font-family: "Istok Web";
+  /*font-family: "Istok Web";*/
   font-size: 1rem;
   font-weight: 300;
   text-align: left;
@@ -684,7 +684,7 @@ input[type=email]:focus {
 }
 
 .new-sms-body {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #010101;
   font-size: 1rem;
   font-weight: 400;
@@ -693,7 +693,7 @@ input[type=email]:focus {
 
 .rowsecondlist li {
   color: #ffffff;
-  font-family: "Istok Web";
+  /*font-family: "Istok Web";*/
   font-size: 1rem;
   font-weight: 300;
   text-align: left;
@@ -778,14 +778,14 @@ input[type=email]:focus {
 
 .row-content h3 {
   font-size: 1.32rem;
-  font-family: 'Istok Web';
+  /*font-family: 'Istok Web';*/
   color: #ffffff;
   font-weight: 600;
 }
 
 .row-content h4 {
   font-size: 0.92rem;
-  font-family: 'Istok Web';
+  /*font-family: 'Istok Web';*/
   color: #ffffff;
   font-weight: 300;
 }
@@ -850,7 +850,7 @@ input[type=email]:focus {
 }
 
 .head-five {
-  font-family: Montserrat;
+  
   font-size: 3rem;
   color: #000000;
   margin-bottom: 3rem;
@@ -862,7 +862,7 @@ input[type=email]:focus {
 .service-header-one h1 {
   color: #244886;
   font-size: 2.75rem;
-  font-family: Montserrat;
+  
   font-weight: 700;
   text-align: center;
 }
@@ -874,7 +874,7 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-top: 0.75rem;
-  font-family: Montserrat;
+  
   text-align: center;
 }
 
@@ -883,7 +883,7 @@ input[type=email]:focus {
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 3rem;
-  font-family: Montserrat;
+  
   text-align: left;
   margin-bottom: 0;
 }
@@ -950,20 +950,33 @@ input[type=email]:focus {
 }
 
 .page-one {
+  position: relative; /* Make sure the container is positioned */
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   max-width: 100%;
   margin-bottom: 2rem;
-  background-image: url("Assets/back.jpg");
-  background-position: center !important;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   padding-top: 3rem;
 }
+
+.page-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Assets/back.jpg");
+  background-position: center !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
 
 .paid-one {
   display: none;
@@ -1049,7 +1062,7 @@ input[type=email]:focus {
 
 .head-four {
   font-size: 1.13rem;
-  font-family: Montserrat;
+  
   color: #001833;
   margin-bottom: 1rem;
   padding-left: 0.75rem;
@@ -1078,7 +1091,7 @@ input[type=email]:focus {
 }
 
 .file-upload {
-  font-family: Montserrat;
+  
   font-size: 0.7rem;
   font-weight: 500;
   margin-top: 0;
@@ -1086,7 +1099,7 @@ input[type=email]:focus {
 
 .file-uploads {
   color: #6A6A6A;
-  font-family: Montserrat;
+  
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -1207,7 +1220,7 @@ input[type=email]:focus {
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.85rem;
-  font-family: Montserrat;
+  
 }
 
 .service-one {
@@ -1387,20 +1400,20 @@ input[type=email]:focus {
 .home-text h1 {
   margin-top: 1rem;
   font-size: 2.45rem;
-  font-family: Montserrat;
+  
 }
 
 .hoht {
   margin-top: 3rem;
   font-size: 3.05rem;
-  font-family: Montserrat;
-  color: #ffffff
+  
+  color: #083a8f
 }
 
 .hohta {
   margin-top: 2rem;
   font-size: 1.75rem;
-  font-family: Montserrat;
+  
   font-weight: 700;
   /* color: #ffffff */
 }
@@ -1464,7 +1477,7 @@ input[type=email]:focus {
   border-radius: 5px;
   font-size: 0.88rem;
   cursor: pointer;
-  font-family: Montserrat;
+  
   font-weight: 500;
   transition: 0.2s;
   height: 3rem;
@@ -1618,7 +1631,7 @@ input[type=email]:focus {
 
 .two-body {
   font-size: .88rem;
-  font-family: Montserrat;
+  
   color: #001833;
   margin-bottom: 1rem;
   padding-left: 0.75rem
@@ -1630,7 +1643,7 @@ input[type=email]:focus {
   margin-bottom: 0.65rem;
   font-size: .9rem;
   font-weight: 400;
-  font-family: Montserrat;
+  
   width: 100%;
   max-width: 100%;
 }
@@ -1777,7 +1790,7 @@ input[type=email]:focus {
 }
 
 .career-label {
-  font-family: "IBM Plex Sans";
+  /*font-family: "IBM Plex Sans";*/
   font-size: 0.88rem;
   color: #010101;
   font-weight: 600;
@@ -1785,7 +1798,7 @@ input[type=email]:focus {
 }
 
 .career-labels {
-  font-family: "IBM Plex Sans";
+  /*font-family: "IBM Plex Sans";*/
   font-size: 0.88rem;
   color: #010101;
   font-weight: 600;
@@ -1829,7 +1842,7 @@ input[type=email]:focus {
 .expert-info h5 {
   color: #6A6A6A;
   font-size: 1rem;
-  font-family: 'Space Grotesk';
+  /*font-family: 'Space Grotesk';*/
   font-weight: 400;
 }
 
@@ -1885,7 +1898,7 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  font-family: Montserrat;
+  
   width: 60%;
   max-width: 60%;
   text-align: center;
@@ -1896,7 +1909,7 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  font-family: Montserrat;
+  
   text-align: center;
   min-width: 100%;
   max-width: 100%;
@@ -1970,7 +1983,7 @@ input[type=email]:focus {
   font-weight: 500;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  font-family: Montserrat;
+  
   justify-self: center;
   align-self: center;
 }
@@ -1984,7 +1997,7 @@ input[type=email]:focus {
   font-weight: 400;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  font-family: Montserrat;
+  
   justify-self: center;
   align-self: center;
 }
@@ -2000,7 +2013,7 @@ input[type=email]:focus {
   font-weight: 400;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  font-family: Montserrat;
+  
   justify-self: center;
   align-self: center;
 }
@@ -2132,7 +2145,7 @@ input[type=email]:focus {
 }
 
 .first-header {
-  font-family: Montserrat;
+  
   font-size: 2.25rem;
   color: #001833;
   margin-bottom: 1.65rem;
@@ -2145,7 +2158,7 @@ input[type=email]:focus {
 }
 
 .head-first {
-  font-family: Montserrat;
+  
   font-size: 1.5rem;
   color: #001833;
   margin-top: 2rem;
@@ -2153,27 +2166,27 @@ input[type=email]:focus {
 }
 
 .body-first {
-  font-family: Montserrat;
+  
   font-size: 1rem;
   color: #001833;
 }
 
 .first-list li {
-  font-family: Montserrat;
+  
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: .65rem;
 }
 
 .second-header {
-  font-family: Montserrat;
+  
   font-size: 1.5rem;
   color: #001833;
   margin-bottom: 1rem;
 }
 
 .third-header {
-  font-family: Montserrat;
+  
   font-size: 1.125rem;
   color: #000000;
   margin-bottom: 1.75rem;
@@ -2185,33 +2198,33 @@ input[type=email]:focus {
 }
 
 .fourth-header {
-  font-family: Montserrat;
+  
   font-size: 1.063rem;
   color: #D4D4D4;
   margin-bottom: 0.4rem;
 }
 
 .head-six {
-  font-family: Montserrat;
+  
   font-size: 1.5rem;
   color: #001833;
 }
 
 .head-seven {
-  font-family: Montserrat;
+  
   font-size: 1rem;
   color: #B4B0B0;
   margin-bottom: .5rem;
 }
 
 .head-eight {
-  font-family: Montserrat;
+  
   font-size: 1rem;
   color: #001833;
 }
 
 .fifth-header {
-  font-family: Montserrat;
+  
   font-size: 1.063rem;
   color: #001833;
   margin-bottom: 0.4rem;
@@ -2260,7 +2273,7 @@ input[type=email]:focus {
 }
 
 .career-col label {
-  font-family: "poppins";
+  /*font-family: "poppins";*/
   font-size: 0.75rem;
   color: rgb(0, 0, 0)
 }
@@ -2284,7 +2297,7 @@ input[type=email]:focus {
 }
 
 .writer {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #244886;
   font-size: 0.88rem;
   margin-left: 0.5rem;
@@ -2292,21 +2305,21 @@ input[type=email]:focus {
 }
 
 .writes {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #1d3157;
   font-size: 1.1rem;
   font-weight: 600;
 }
 
 .writes-two {
-  font-family: "Space Grotesk";
+  /*font-family: "Space Grotesk";*/
   color: #010101;
   font-size: 0.88rem;
   font-weight: 500
 }
 
 .head-three {
-  font-family: Montserrat;
+  
   font-size: 2.25rem;
   color: #001833;
   margin-bottom: 1rem;
@@ -2347,7 +2360,7 @@ input[type=email]:focus {
 }
 
 .header-sam {
-  font-family: Montserrat;
+  
   font-size: 2.5rem;
   color: #244886;
   margin-bottom: 1rem
@@ -2579,7 +2592,7 @@ input[type=email]:focus {
 }
 
 .blog-header-one h5 {
-  font-family: Roboto;
+  /*font-family: Roboto;*/
   font-size: 1.15rem;
   color: #010101;
   font-weight: 300
@@ -2612,21 +2625,21 @@ input[type=email]:focus {
 }
 
 .service-header {
-  font-family: Montserrat;
+  
   font-size: 2.5rem;
   color: #244886;
   margin-bottom: .5rem
 }
 
 .service-header-two {
-  font-family: Montserrat;
+  
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0;
 }
 
 .header-sam-p {
-  font-family: Montserrat;
+  
   font-size: 1.125rem;
   font-weight: 500;
   color: #000000
@@ -2749,7 +2762,7 @@ input[type=file] {
   color: #244886;
   font-size: 2.45rem;
   margin-top: 0.75rem;
-  font-family: Montserrat;
+  
   text-align: center;
 }
 
@@ -2764,7 +2777,7 @@ input[type=file] {
 }
 
 .vas {
-  font-family: Montserrat;
+  
   font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
@@ -2772,7 +2785,7 @@ input[type=file] {
 }
 
 .vas-white {
-  font-family: Montserrat;
+  
   font-size: 1.75rem;
   font-weight: 700;
   color: #000000;
@@ -2780,7 +2793,7 @@ input[type=file] {
 }
 
 .vas-white-mini {
-  font-family: Montserrat;
+  
   font-size: 1.25rem;
   font-weight: 700;
   color: #000000;
@@ -2832,7 +2845,6 @@ input[type=file] {
 }
 
 .newly {
-  font-family: Roboto;
   font-size: 1rem;
   color: #244886;
   font-weight: 600;
@@ -3019,7 +3031,7 @@ input[type=file] {
 
   .one-body {
     text-align: left;
-    font-family: Montserrat;
+    
     font-size: 1rem;
     color: #000000;
     margin-bottom: 1rem;
@@ -3047,7 +3059,7 @@ input[type=file] {
     font-size: .9rem;
     font-weight: 500;
     margin-top: 0.25rem;
-    font-family: Montserrat;
+    
     text-align: center;
   }
 
@@ -3922,7 +3934,7 @@ input[type=file] {
     font-weight: 500;
     margin-bottom: 0.35rem;
     font-size: 0.7rem;
-    font-family: Montserrat;
+    
   }
 
   .last-bor {
@@ -3931,7 +3943,7 @@ input[type=file] {
   }
 
   .header-five {
-    font-family: "Space Grotesk";
+    /*font-family: "Space Grotesk";*/
     color: #010101;
     font-size: 0.65rem;
     /* margin-left: 0.75rem; */
@@ -3977,7 +3989,7 @@ input[type=file] {
   }
 
   .head-three {
-    font-family: Montserrat;
+    
     font-size: 1.25rem;
     margin-bottom: .5rem;
   }
@@ -4012,7 +4024,7 @@ input[type=file] {
 
   .head-four {
     font-size: 0.574rem;
-    font-family: Montserrat;
+    
     color: #001833;
     margin-bottom: .5rem;
     padding-left: 0rem;
@@ -4021,7 +4033,7 @@ input[type=file] {
 
   .two-body {
     font-size: .45rem;
-    font-family: Montserrat;
+    
     color: #001833;
     margin-bottom: 0rem;
     padding-left: 0rem
@@ -4122,7 +4134,7 @@ input[type=file] {
     font-size: .8rem;
     font-weight: 500;
     margin-bottom: 0rem;
-    font-family: Montserrat;
+    
     width: 80%;
     max-width: 80%;
     text-align: center;
@@ -4139,7 +4151,7 @@ input[type=file] {
   }
 
   .third-header {
-    font-family: Montserrat;
+    
     font-size: 0.98rem;
     color: #000000;
     margin-bottom: 1.05rem;
@@ -4174,7 +4186,7 @@ input[type=file] {
     font-weight: 400;
     margin-bottom: 0.35rem;
     font-size: 0.68rem;
-    font-family: Montserrat;
+    
     justify-self: center;
     align-self: center;
   }
@@ -4184,7 +4196,7 @@ input[type=file] {
     font-weight: 400;
     margin-bottom: 0.35rem;
     font-size: 0.68rem;
-    font-family: Montserrat;
+    
     justify-self: center;
     align-self: center;
   }
@@ -4217,7 +4229,7 @@ input[type=file] {
   }
 
   .file-upload {
-    font-family: Montserrat;
+    
     font-size: 0.7rem;
     font-weight: 600;
   }
@@ -4232,7 +4244,7 @@ input[type=file] {
 
   .file-uploads {
     color: #6A6A6A;
-    font-family: Montserrat;
+    
     font-size: 0.5rem;
     font-weight: 500;
   }
@@ -4272,14 +4284,14 @@ input[type=file] {
   .hoht {
     margin-top: 0rem;
     font-size: 2.15rem;
-    font-family: Montserrat;
+    
     color: #000000
   }
 
   .hohta {
     margin-top: 0.5rem;
     font-size: 1.85rem;
-    font-family: Montserrat;
+    
     color: #000000;
   }
 
@@ -4293,7 +4305,7 @@ input[type=file] {
   }
 
   .blogs-header {
-    font-family: Montserrat;
+    
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;

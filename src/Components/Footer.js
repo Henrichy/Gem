@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className='rowtwo-b'>
                     <h3 style={{
                         marginBottom: "1.5rem",
-                        fontFamily: "Space Grotesk",
+                        
                         fontSize: "1.053rem",
                         fontWeight: 700,
                         textAlign: "left",
@@ -96,7 +96,7 @@ const Footer = () => {
                 <div className='rowtwo-c'>
                     <h3 style={{
                         marginBottom: "1.5rem",
-                        fontFamily: "Space Grotesk",
+                        
                         fontSize: "1.053rem",
                         fontWeight: 700,
                         textAlign: "left",
@@ -115,7 +115,7 @@ const Footer = () => {
                 marginBottom: "5.5vh"
             }}>
                 <h4 style={{
-                    fontFamily: "Istok Web",
+        
                     fontSize: "0.9rem",
                     fontWeight: 200,
                     textAlign: "center",

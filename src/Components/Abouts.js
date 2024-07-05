@@ -38,7 +38,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            Easy set up
+                            <p style={{color:'#083a8f'}}>Easy set up</p>
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
@@ -67,7 +67,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            Reliable software and high delivery rates                        </motion.h3>
+                            <p style={{color:'#083a8f'}}>Reliable software and high delivery rates</p>                        </motion.h3>
                         <motion.p initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
                             opacity: { duration: 1 },
@@ -95,7 +95,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            Competitive Pricing
+                           <p style={{color:'#083a8f'}}>Competitive Pricing</p>
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
