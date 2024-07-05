@@ -443,8 +443,8 @@ nav {
 }
 
 .contact-body {
-  margin-top: 0.8rem;
-  width: 45%;
+  /* margin-top: 0.8rem; */
+  width: 48%;
   max-width: 50%;
   color: #000000;
   font-size: 0.88rem;
@@ -532,7 +532,7 @@ nav {
 .memo {
   width: 4.25rem;
   height: 4.5rem;
-  margin-bottom: .74rem;
+  /* margin-bottom: .74rem; */
   margin-left: 1.5rem;
 }
 
@@ -1228,7 +1228,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #391fcc;
+  background-color: #244886;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -1242,7 +1242,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #391fcc;
+  background-color: #244886;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -1256,7 +1256,7 @@ input[type=email]:focus {
   flex-direction: column;
   width: 30%;
   max-width: 100%;
-  background-color: #391fcc;
+  background-color: #244886;
   min-height: fit-content;
   border-radius: 15px;
   padding: 2rem;
@@ -2031,7 +2031,7 @@ input[type=email]:focus {
   margin-top: 1.25rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #747474;
+  color: #000000;
   text-align: center;
 }
 
@@ -2880,8 +2880,9 @@ input[type=file] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 75px;
+    min-height: fit-content;
     border-bottom: 3px solid #d1d1d1;
+    padding: 0.35rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -2896,8 +2897,8 @@ input[type=file] {
   }
 
   .nav-logo-container {
-    width: 22%;
-    max-width: 24%;
+    width: 45%;
+    max-width: 50%;
   }
 
   .home-contents {

@@ -177,7 +177,7 @@ const Services = () => {
                                 flexDirection: 'column'
                             }}>
                                 <h3>Fidel Abowei</h3>
-                                <h5 className='expert-hid'>CO-founder</h5>
+                                <h5 className='expert-hid'>Co-founder</h5>
                             </div>
                             <IoLogoLinkedin style={{
                                 fontSize: "2.5rem",
@@ -201,7 +201,7 @@ const Services = () => {
                                 flexDirection: 'column'
                             }}>
                                 <h3>Victory Ikuomola</h3>
-                                <h5 className='expert-hid'>Tech Lead</h5>
+                                <h5 className='expert-hid'>Tech lead</h5>
                             </div>
                             <IoLogoLinkedin style={{
                                 fontSize: "2.5rem",

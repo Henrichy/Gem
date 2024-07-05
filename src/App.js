@@ -15,6 +15,7 @@ import { useState } from 'react';
 import { createContext } from 'react';
 import Privacy from './Components/Privacy';
 import Inblog from './Components/Inblog';
+import { NotFound } from './Components/NotFound';
 
 export const AppContext = createContext();
 
@@ -39,8 +40,8 @@ function App() {
             <Route path='/contact-us' element={<Contacts />} />
             <Route path='/careers' element={<Careers />} />
             <Route path='/careers/:career' element={<InCareer />} />
-            <Route path='/admin/login' element={<Login />} />
             <Route path='/privacy' element={<Privacy />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </AppContext.Provider>

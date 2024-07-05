@@ -36,8 +36,8 @@ const Footer = () => {
                 <div className='rowone-c'>
                     <IoLocationSharp className='io-mai' />
                     <div className='row-content'>
-                        <h3>House 4, A close, off first Avenue Gwarimpa.</h3>
-                        <h4>Abuja, Nigeria.</h4>
+                        <h3>House 4, a close, off first avenue Gwarimpa, Abuja, Nigeria.</h3>
+
                     </div>
                 </div>
             </div>
