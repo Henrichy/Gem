@@ -79,7 +79,7 @@ const Services = () => {
                         ease: "easeIn",
                         delay: 0.8,
                         duration: 0.5
-                    }}>Interactive Voice Response</motion.h3>
+                    }}>Interactive voice response</motion.h3>
                 </motion.div>
             </div>
 
@@ -93,7 +93,7 @@ const Services = () => {
                     ease: "easeIn",
                     delay: 0.04,
                     duration: 0.5
-                }}>Why Choose Us</motion.h2>
+                }}>Why choose us</motion.h2>
 
                 <div className='choose-row'>
                     <div className='left-choose'>

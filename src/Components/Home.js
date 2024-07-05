@@ -34,9 +34,9 @@ const Home = () => {
                         delay: .025,
                         duration: 0.35
                     }} className='home-text'>
-                        <h4>Telecoms Value Added Service Aggregator</h4>
+                        <h4 style={{color:'#083a8f'}}>Telecoms Value Added Service Aggregator</h4>
 
-                        <h2 className='hoht'>Reach More, Engage Better.</h2>
+                        <h2 className=''>Reach More, Engage Better.</h2>
 
                         <h2 className='hohta'>
                             Innovative <span style={{
@@ -46,7 +46,7 @@ const Home = () => {
                             }}> VAS and Bulk SMS Solutions</span>  for Nigeria
                         </h2>
 
-                        <p style={{ color: "#ffffff", fontWeight: 500, marginTop: "1rem" }}>We empower business of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
+                        <p style={{ color: "#000", fontWeight: 600, marginTop: "1rem" }}>We empower business of all sizes to connect with their customers. Our cutting-edge VAS and Bulk SMS platforms are designed to streamline communication, boost engagement, and help you achieve your marketing goals.</p>
 
                         <div className='center-butt'>
                             <Link to="/services" element={<Service />} style={{ textDecoration: "none" }}>
