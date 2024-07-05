@@ -22,15 +22,20 @@ const Careers = () => {
 
     async function setData() {
         try {
-            await axios.get('http://127.0.0.1:8000/api/v1/jobs')
-                .then((res) => {
-                    setErrorMessage("")
-                    // res.json()
-                    const data = res.data.data;
-                    setMockdata(res.data.data.reverse());
-                })
+            const res = await axios.get('http://127.0.0.1:8000/api/v1/jobs');
+            const data = res.data.data;
+
+            if (data.length === 0) {
+                setErrorMessage("NO JOBS AVAILABLE");
+                setMockdata([]); // Clear the mock data if no jobs are available
+            } else {
+                setErrorMessage("");
+                setMockdata(data.reverse());
+            }
         } catch (error) {
-            setErrorMessage(error.toJSON().message);
+            //setErrorMessage(error.toJSON().message);
+            setErrorMessage("NO JOBS AVAILABLE");
+
         }
     }
 
@@ -130,70 +135,78 @@ const Careers = () => {
 
             <div className='careers-page-three'>
                 <motion.h2 initial={{ scale: 0.05 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }} className='head-five'>Open Roles</motion.h2>
+                {errorMessage ? (
+                    <div>{errorMessage}</div>
+                ) : (
+                    mockdata !== undefined && mockdata.length > 0 ? (
+                        mockdata.map((user, index) => {
+                            const job = user.id;
+                            return (
+                                <motion.div key={index} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
+                                    x: { type: "spring", stiffness: 60 },
+                                    opacity: { duration: 1 },
+                                    ease: "easeIn",
+                                    delay: 0.0008,
+                                    duration: 0.9
+                                }} className='role-one'>
+                                    <div style={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center"
+                                    }}>
+                                        <h4 className='head-six'>{user.title}</h4>
+                                    </div>
+                                    <div style={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center"
+                                    }}>
+                                        <h5 className='head-seven'>Experience Level</h5>
+                                        <h3 className='head-eight'>{user.experience}</h3>
+                                    </div>
+                                    <div style={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center"
+                                    }}>
+                                        <h5 className='head-seven'>Deadline</h5>
+                                        <h3 className='head-eight'>{user.deadline}</h3>
+                                    </div>
+                                    <div style={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "center"
+                                    }}>
+                                        <FaLocationDot className='location-dot' />
+                                        <div style={{
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            justifyContent: "center"
+                                        }}>
+                                            <h5 className='head-seven'>Location</h5>
+                                            <h3 className='head-eight'>{user.location}</h3>
+                                        </div>
+                                    </div>
 
-                {mockdata !== 'undefined' && mockdata.map((user, index) => {
-                    const job = user.id;
-                    return (
-                        <motion.div key={index} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
-                            x: { type: "spring", stiffness: 60 },
-                            opacity: { duration: 1 },
-                            ease: "easeIn",
-                            delay: 0.0008,
-                            duration: 0.9
-                        }} className='role-one'>
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "Column",
-                                justifyContent: "center"
-                            }}>
-                                <h4 className='head-six'>{user.title}</h4>
-                            </div>
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "Column",
-                                justifyContent: "center"
-                            }}>
-                                <h5 className='head-seven'>Experience Level</h5>
-                                <h3 className='head-eight'>{user.experience}</h3>
-                            </div>
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "Column",
-                                justifyContent: "center"
-                            }}>
-                                <h5 className='head-seven'>Deadline</h5>
-                                <h3 className='head-eight'>{user.deadline}</h3>
-                            </div>
-                            <div style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
-                            }}>
-                                <FaLocationDot className='location-dot' />
-                                <div style={{
-                                    display: "flex",
-                                    flexDirection: "Column",
-                                    justifyContent: "center"
-                                }}>
-                                    <h5 className='head-seven'>Location</h5>
-                                    <h3 className='head-eight'>{user.location}</h3>
-                                </div>
-                            </div>
+                                    <div style={{
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "center"
+                                    }}>
+                                        <button onClick={() => {
+                                            window.location.href = `http://localhost:3001/careers/${job}`;
+                                        }} className='apply-button'>
+                                            Apply Now
+                                        </button>
+                                    </div>
+                                </motion.div>
+                            );
+                        })
+                    ) : (
+                        <div>Loading...</div>
+                    )
+                )}
 
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "Column",
-                                justifyContent: "center"
-                            }}>
-                                <button onClick={() => {
-                                    window.location.href = `http://localhost:3001/careers/${job}`;
-                                }} className='apply-button'>
-                                    Apply Now
-                                </button>
-                            </div>
-                        </motion.div>
-                    );
-                })}
             </div>
             <Contact />
             <Footer />
