@@ -26,6 +26,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-froala-wysiwyg": "^4.2.1",
+    "react-headroom": "^3.2.1",
     "react-icons": "^5.2.1",
     "react-pro-sidebar": "^1.1.0",
     "react-router-dom": "^6.23.1",
@@ -57,5 +58,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@nx/vite": "19.4.0",
+    "@nx/web": "19.4.0",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "@vitest/ui": "^1.3.1",
+    "nx": "19.4.0",
+    "vite": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "nx": {}
 }
