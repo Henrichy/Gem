@@ -29,8 +29,8 @@ const Blog = () => {
                     </Link>
 
                     <div className='blog-details'>
-                        <p>Published in Jun 25, 2022</p>
-                        <p style={{ cursor: "pointer" }}>By: Dr Olufemi Olumodeji</p>
+                        <p>Jun 25, 2024</p>
+                        <p style={{ cursor: "pointer" }}>Paul Delamo</p>
                     </div>
 
                     <div className='blog-title'>
@@ -41,7 +41,7 @@ const Blog = () => {
                                 ease: "easeIn",
                                 delay: 0.0008,
                                 duration: 0.9
-                            }}>5 ways to leverage SMS messaging to accelerate your business growth</motion.h4>
+                            }}>5 ways to leverage SMS messaging to accelerate business growth</motion.h4>
                         </Link>
                     </div>
                 </div>
@@ -56,8 +56,8 @@ const Blog = () => {
                         }} className='blog-imaje' src={Bl} alt="" />
                     </Link>
                     <div className='blog-details'>
-                        <p>Published in Jun 25, 2022</p>
-                        <p style={{ cursor: "pointer" }}>By: Dr Fidel Abowei</p>
+                        <p>Jun 25, 2024</p>
+                        <p style={{ cursor: "pointer" }}>Paul Delamo</p>
                     </div>
                     <div className='blog-title'>
                         <Link to="/blog" element={<Blogs />} style={{ textDecoration: "none" }}>

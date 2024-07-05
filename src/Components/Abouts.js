@@ -18,9 +18,9 @@ const Abouts = () => {
                 }} className='abouts-page-one'>
                     <h3 className='header-sam' >About us</h3>
                     <p className='header-sam-two' >We are a blend of young professionals with a strong work ethic and a collaborative spirit. We're dedicated to maintaining reliable SMS infrastructure, expanding our customer base, and helping businesses achieve their goals.</p>
-                    <p className='header-sam-p'>
+                    {/* <p className='header-sam-p'>
                         Gemini eliminate the need for VAS providers and content owners to maintain multiple physical connections to mobile network operators (MNOs) by proving a single connection point.
-                    </p>
+                    </p> */}
                 </motion.div>
                 <div className='abouts-page-two'>
                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{

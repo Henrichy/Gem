@@ -56,7 +56,7 @@ const Contact = () => {
 
     return (
         <div className='contact-contents'>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", alignItems: 'center', justifyContent: 'center' }}>
                 <h2>Get In <span style={{
                     color: "#244886"
                 }}>Touch</span></h2><motion.img src={Note} animate={{ rotate: [0, 45, 90, 135, 180, 225, 270, 315, 360] }} transition={{ repeat: Infinity, duration: 2.5 }} className='memo' alt="notepad"></motion.img>
@@ -74,14 +74,11 @@ const Contact = () => {
 
                 <input type="tel" required placeholder='Phone number *' name="phonenumber" value={phone} onChange={(e) => setPhone(e.target.value)} />
 
-                <label style={{
+                {/* <label style={{
                     fontFamily: "poppins",
                     fontSize: "0.75rem",
                     color: "#8D8D8D"
-                }}>Message <span style={{ color: "red" }}>*</span></label>
-                {/* <FroalaEditorComponent tag='textarea' config={{
-                    placeholderText: "Write blog body here..."
-                }} /> */}
+                }}>Message <span style={{ color: "red" }}>*</span></label> */}
                 <textarea style={{
                     border: "none",
                     borderBottom: "1px solid #8D8D8D",
@@ -89,7 +86,7 @@ const Contact = () => {
                     padding: "1rem",
                     marginBottom: "2rem"
 
-                }} placeholder='Write your message...' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                }} placeholder='Write your message... *' name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
 
                 <input type="submit" className={submit ? 'contact-sum' : 'contact-sub'} value="Send Message" />
             </form>
