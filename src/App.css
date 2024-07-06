@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*font-family: Montserrat, Roboto !important;*/
+  font-family: Montserrat, Roboto !important;
 }
 
 img {
@@ -27,14 +27,14 @@ body {
 
 .head-one {
   text-align: left;
-  
+
   font-size: 2.88rem;
   color: #244886;
   margin-bottom: 1rem
 }
 
 .head-on {
-  
+
   font-size: 2.88rem;
   color: #244886;
   margin-bottom: 0.5rem
@@ -42,14 +42,14 @@ body {
 
 .one-body {
   text-align: left;
-  
+
   font-size: 1.5rem;
   color: #000000;
 }
 
 .head-two {
   text-align: left;
-  
+
   font-size: 1.75rem;
   color: #000000;
   margin-bottom: 1.5rem
@@ -67,7 +67,7 @@ nav {
 }
 
 .header-sam-two {
-  
+
   font-size: 1.6rem;
   font-weight: 600;
   color: #000000;
@@ -75,7 +75,7 @@ nav {
 }
 
 .blog-summary {
-  
+
   font-size: 0.9rem;
   font-weight: 400;
   color: #000000;
@@ -92,7 +92,6 @@ nav {
 }
 
 .header-sam-three {
-  
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1.35rem;
@@ -100,7 +99,7 @@ nav {
 }
 
 .header-sam-three-p {
-  
+
   font-size: 1.35rem;
   font-weight: 400;
 }
@@ -114,18 +113,7 @@ nav {
   max-width: 100%;
 }
 
-.about-contents {
-  min-height: 80vh;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #F7F6F7;
-  padding-top: 3rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .abouts-contents {
   padding: 0;
@@ -195,7 +183,7 @@ nav {
 }
 
 .log-lab {
-/*font-family: "poppins";*/
+  /*font-family: "poppins";*/
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
   font-weight: 500;
@@ -356,19 +344,6 @@ nav {
   flex-direction: column;
 }
 
-.about-contents {
-  min-height: 80vh;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #F7F6F7;
-  padding-top: 3rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .service-contents {
   min-height: 60vh;
   margin-top: 2rem;
@@ -384,7 +359,7 @@ nav {
 }
 
 .eliminate {
-  
+
   font-size: 1.1rem;
   font-weight: 500;
   color: #ffffff;
@@ -392,7 +367,7 @@ nav {
 }
 
 .eliminate-white {
-  
+
   font-size: 1.1rem;
   font-weight: 500;
   color: #000000;
@@ -400,7 +375,7 @@ nav {
 }
 
 .eliminate-white-mini {
-  
+
   font-size: 0.9rem;
   font-weight: 500;
   color: #000000;
@@ -421,7 +396,7 @@ nav {
 }
 
 .blogs-header {
-  
+
   font-size: 2.75rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
@@ -519,7 +494,7 @@ nav {
 
 .over-head {
   color: #244886;
-  
+
   font-size: 1.4rem;
   font-weight: 600;
 }
@@ -850,7 +825,7 @@ input[type=email]:focus {
 }
 
 .head-five {
-  
+
   font-size: 3rem;
   color: #000000;
   margin-bottom: 3rem;
@@ -862,7 +837,7 @@ input[type=email]:focus {
 .service-header-one h1 {
   color: #244886;
   font-size: 2.75rem;
-  
+
   font-weight: 700;
   text-align: center;
 }
@@ -874,7 +849,7 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-top: 0.75rem;
-  
+
   text-align: center;
 }
 
@@ -883,20 +858,21 @@ input[type=email]:focus {
   font-size: 2.5rem;
   font-weight: 700;
   margin-top: 3rem;
-  
+
   text-align: left;
   margin-bottom: 0;
 }
 
 .about-image {
-  min-height: 35rem;
+  min-height: 40vh;
   width: 47%;
   max-width: 50%;
   background-color: #F7F6F7;
-  background-image: url("Assets/sent.jpg");
-  background-position: center !important;
+  background-image: url("Assets/sent.png");
+  background-position: top !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-top: 1.2rem;
 }
 
 .location-dot {
@@ -905,13 +881,14 @@ input[type=email]:focus {
 }
 
 .about-text {
-  min-height: 70vh;
+  /* min-height: 70vh; */
   width: 47%;
   max-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem;
+  padding-top: 0%;
+  /* padding: 1rem; */
 }
 
 .about-text h2 {
@@ -922,7 +899,13 @@ input[type=email]:focus {
 .about-text p {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 1.25rem;
+  margin-top: 0;
+}
+
+.abt {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 .about-list {
@@ -950,7 +933,8 @@ input[type=email]:focus {
 }
 
 .page-one {
-  position: relative; /* Make sure the container is positioned */
+  position: relative;
+  /* Make sure the container is positioned */
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -974,7 +958,8 @@ input[type=email]:focus {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
-  z-index: -1; /* Ensure the background is behind the content */
+  z-index: -1;
+  /* Ensure the background is behind the content */
 }
 
 
@@ -999,21 +984,34 @@ input[type=email]:focus {
 .abouts-page-two {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 100%;
   background-color: #ffffff;
   padding-left: 4rem;
   padding-right: 4rem;
   padding-bottom: 4.5rem;
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
 }
 
 .abouts-page-three {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  background-color: #ffffff;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4.5rem;
+  padding-top: 3.5rem;
+}
+
+.abouts-page-thre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   max-width: 100%;
   background-color: #ffffff;
@@ -1026,7 +1024,7 @@ input[type=email]:focus {
 .abouts-page-four {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 100%;
   background-color: #ffffff;
@@ -1044,7 +1042,7 @@ input[type=email]:focus {
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 50vh;
   border-radius: 6px;
 }
 
@@ -1056,13 +1054,12 @@ input[type=email]:focus {
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 50vh;
   border-radius: 6px;
 }
 
 .head-four {
   font-size: 1.13rem;
-  
   color: #001833;
   margin-bottom: 1rem;
   padding-left: 0.75rem;
@@ -1077,7 +1074,7 @@ input[type=email]:focus {
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 50vh;
   border-radius: 6px;
 }
 
@@ -1091,7 +1088,6 @@ input[type=email]:focus {
 }
 
 .file-upload {
-  
   font-size: 0.7rem;
   font-weight: 500;
   margin-top: 0;
@@ -1099,7 +1095,7 @@ input[type=email]:focus {
 
 .file-uploads {
   color: #6A6A6A;
-  
+
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -1112,7 +1108,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   margin-top: 0;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .aptfour-contents {
@@ -1123,7 +1119,8 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   margin-top: 0;
-  min-height: 60vh;
+  min-height: 50vh;
+  padding: 0;
 }
 
 .apthree-contents {
@@ -1134,7 +1131,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   margin-top: 0;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .home-text {
@@ -1174,31 +1171,39 @@ input[type=email]:focus {
   margin-bottom: .75rem;
   /* margin: 0px auto; */
   align-self: center;
+  border-radius: 15%;
 }
 
 
 .service-one h3 {
   color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
   /* text-align: center; */
 }
 
+/* .about-text p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+} */
+
+
+
 .service-two h3 {
   color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .service-three h3 {
   color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
-  text-align: center;
 }
 
 .blog-header {
@@ -1220,7 +1225,7 @@ input[type=email]:focus {
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.85rem;
-  
+
 }
 
 .service-one {
@@ -1400,20 +1405,20 @@ input[type=email]:focus {
 .home-text h1 {
   margin-top: 1rem;
   font-size: 2.45rem;
-  
+
 }
 
 .hoht {
   margin-top: 3rem;
   font-size: 3.05rem;
-  
+
   color: #083a8f
 }
 
 .hohta {
   margin-top: 2rem;
   font-size: 1.75rem;
-  
+
   font-weight: 700;
   /* color: #ffffff */
 }
@@ -1455,10 +1460,10 @@ input[type=email]:focus {
 
 .conta {
   padding: 1rem 3rem;
-  background-color: #223ac0;
+  background-color: #244886;
   /* opacity: 5; */
   color: #ffffff;
-  border: 3.5px solid #223ac0;
+  border: none;
   border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -1477,7 +1482,7 @@ input[type=email]:focus {
   border-radius: 5px;
   font-size: 0.88rem;
   cursor: pointer;
-  
+
   font-weight: 500;
   transition: 0.2s;
   height: 3rem;
@@ -1631,7 +1636,7 @@ input[type=email]:focus {
 
 .two-body {
   font-size: .88rem;
-  
+
   color: #001833;
   margin-bottom: 1rem;
   padding-left: 0.75rem
@@ -1643,7 +1648,7 @@ input[type=email]:focus {
   margin-bottom: 0.65rem;
   font-size: .9rem;
   font-weight: 400;
-  
+
   width: 100%;
   max-width: 100%;
 }
@@ -1898,7 +1903,18 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  
+
+  width: 60%;
+  max-width: 60%;
+  text-align: center;
+}
+
+.ebebe {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
   width: 60%;
   max-width: 60%;
   text-align: center;
@@ -1909,7 +1925,7 @@ input[type=email]:focus {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  
+
   text-align: center;
   min-width: 100%;
   max-width: 100%;
@@ -1983,7 +1999,7 @@ input[type=email]:focus {
   font-weight: 500;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  
+
   justify-self: center;
   align-self: center;
 }
@@ -1997,7 +2013,7 @@ input[type=email]:focus {
   font-weight: 400;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  
+
   justify-self: center;
   align-self: center;
 }
@@ -2013,7 +2029,7 @@ input[type=email]:focus {
   font-weight: 400;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  
+
   justify-self: center;
   align-self: center;
 }
@@ -2145,7 +2161,7 @@ input[type=email]:focus {
 }
 
 .first-header {
-  
+
   font-size: 2.25rem;
   color: #001833;
   margin-bottom: 1.65rem;
@@ -2158,7 +2174,7 @@ input[type=email]:focus {
 }
 
 .head-first {
-  
+
   font-size: 1.5rem;
   color: #001833;
   margin-top: 2rem;
@@ -2166,27 +2182,27 @@ input[type=email]:focus {
 }
 
 .body-first {
-  
+
   font-size: 1rem;
   color: #001833;
 }
 
 .first-list li {
-  
+
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: .65rem;
 }
 
 .second-header {
-  
+
   font-size: 1.5rem;
   color: #001833;
   margin-bottom: 1rem;
 }
 
 .third-header {
-  
+
   font-size: 1.125rem;
   color: #000000;
   margin-bottom: 1.75rem;
@@ -2198,33 +2214,33 @@ input[type=email]:focus {
 }
 
 .fourth-header {
-  
+
   font-size: 1.063rem;
   color: #D4D4D4;
   margin-bottom: 0.4rem;
 }
 
 .head-six {
-  
+
   font-size: 1.5rem;
   color: #001833;
 }
 
 .head-seven {
-  
+
   font-size: 1rem;
   color: #B4B0B0;
   margin-bottom: .5rem;
 }
 
 .head-eight {
-  
+
   font-size: 1rem;
   color: #001833;
 }
 
 .fifth-header {
-  
+
   font-size: 1.063rem;
   color: #001833;
   margin-bottom: 0.4rem;
@@ -2319,7 +2335,7 @@ input[type=email]:focus {
 }
 
 .head-three {
-  
+
   font-size: 2.25rem;
   color: #001833;
   margin-bottom: 1rem;
@@ -2360,7 +2376,7 @@ input[type=email]:focus {
 }
 
 .header-sam {
-  
+
   font-size: 2.5rem;
   color: #244886;
   margin-bottom: 1rem
@@ -2625,21 +2641,21 @@ input[type=email]:focus {
 }
 
 .service-header {
-  
+
   font-size: 2.5rem;
   color: #244886;
   margin-bottom: .5rem
 }
 
 .service-header-two {
-  
+
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0;
 }
 
 .header-sam-p {
-  
+
   font-size: 1.125rem;
   font-weight: 500;
   color: #000000
@@ -2723,6 +2739,26 @@ input[type=email]:focus {
   align-items: center;
 }
 
+.about-contents {
+  /* min-height: 80vh; */
+  margin-top: 3rem;
+  background-color: #F7F6F7;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.about-column {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F6F7;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
 input[type=file] {
   width: 100%;
   height: inherit;
@@ -2762,7 +2798,7 @@ input[type=file] {
   color: #244886;
   font-size: 2.45rem;
   margin-top: 0.75rem;
-  
+
   text-align: center;
 }
 
@@ -2777,7 +2813,7 @@ input[type=file] {
 }
 
 .vas {
-  
+
   font-size: 1.75rem;
   font-weight: 700;
   color: #ffffff;
@@ -2785,7 +2821,7 @@ input[type=file] {
 }
 
 .vas-white {
-  
+
   font-size: 1.75rem;
   font-weight: 700;
   color: #000000;
@@ -2793,7 +2829,7 @@ input[type=file] {
 }
 
 .vas-white-mini {
-  
+
   font-size: 1.25rem;
   font-weight: 700;
   color: #000000;
@@ -2990,7 +3026,6 @@ input[type=file] {
   }
 
   .about-contents {
-    min-height: 25vh;
     margin-top: 1rem;
     padding: 0;
     flex-direction: column-reverse;
@@ -3032,7 +3067,7 @@ input[type=file] {
 
   .one-body {
     text-align: left;
-    
+
     font-size: 1rem;
     color: #000000;
     margin-bottom: 1rem;
@@ -3060,11 +3095,16 @@ input[type=file] {
     font-size: .9rem;
     font-weight: 500;
     margin-top: 0.25rem;
-    
+
     text-align: center;
   }
 
   .about-text p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .abt {
     font-size: 1rem;
     margin-top: 0.5rem;
   }
@@ -3935,7 +3975,7 @@ input[type=file] {
     font-weight: 500;
     margin-bottom: 0.35rem;
     font-size: 0.7rem;
-    
+
   }
 
   .last-bor {
@@ -3990,7 +4030,7 @@ input[type=file] {
   }
 
   .head-three {
-    
+
     font-size: 1.25rem;
     margin-bottom: .5rem;
   }
@@ -4025,7 +4065,7 @@ input[type=file] {
 
   .head-four {
     font-size: 0.574rem;
-    
+
     color: #001833;
     margin-bottom: .5rem;
     padding-left: 0rem;
@@ -4034,7 +4074,7 @@ input[type=file] {
 
   .two-body {
     font-size: .45rem;
-    
+
     color: #001833;
     margin-bottom: 0rem;
     padding-left: 0rem
@@ -4135,7 +4175,7 @@ input[type=file] {
     font-size: .8rem;
     font-weight: 500;
     margin-bottom: 0rem;
-    
+
     width: 80%;
     max-width: 80%;
     text-align: center;
@@ -4152,7 +4192,7 @@ input[type=file] {
   }
 
   .third-header {
-    
+
     font-size: 0.98rem;
     color: #000000;
     margin-bottom: 1.05rem;
@@ -4187,7 +4227,7 @@ input[type=file] {
     font-weight: 400;
     margin-bottom: 0.35rem;
     font-size: 0.68rem;
-    
+
     justify-self: center;
     align-self: center;
   }
@@ -4197,7 +4237,7 @@ input[type=file] {
     font-weight: 400;
     margin-bottom: 0.35rem;
     font-size: 0.68rem;
-    
+
     justify-self: center;
     align-self: center;
   }
@@ -4230,7 +4270,7 @@ input[type=file] {
   }
 
   .file-upload {
-    
+
     font-size: 0.7rem;
     font-weight: 600;
   }
@@ -4245,7 +4285,7 @@ input[type=file] {
 
   .file-uploads {
     color: #6A6A6A;
-    
+
     font-size: 0.5rem;
     font-weight: 500;
   }
@@ -4285,14 +4325,14 @@ input[type=file] {
   .hoht {
     margin-top: 0rem;
     font-size: 2.15rem;
-    
+
     color: #000000
   }
 
   .hohta {
     margin-top: 0.5rem;
     font-size: 1.85rem;
-    
+
     color: #000000;
   }
 
@@ -4306,7 +4346,7 @@ input[type=file] {
   }
 
   .blogs-header {
-    
+
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;

@@ -9,7 +9,7 @@ import Contacts from './Contacts';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Serve from "../Assets/smartphone.png";
-import Prods from "../Assets/bulks.png";
+import Prods from "../Assets/bulk.jpg";
 import Tels from "../Assets/ivr.png";
 
 const Services = () => {
@@ -118,9 +118,9 @@ const Services = () => {
                     </div>
                     <div className='right-choose'>
                         <ul className='choose-list'>
-                            <li> <HiOutlinePlus className='outline-plu' />Bulk SMS Expertise & High Deliverability Rates</li>
-                            <li> <HiOutlinePlus className='outline-plu' />Compliance & Support You Can Trust</li>
-                            <li> <HiOutlinePlus className='outline-plu' />Measurable Results & Campaign Optimization</li>
+                            <li> <HiOutlinePlus className='outline-plu' />Bulk SMS expertise & high deliverability rates</li>
+                            <li> <HiOutlinePlus className='outline-plu' />Compliance & support you can trust</li>
+                            <li> <HiOutlinePlus className='outline-plu' />Measurable results & campaign optimization</li>
                         </ul>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ const Services = () => {
                     ease: "easeIn",
                     delay: 0.08,
                     duration: 0.5
-                }}>Meet The Team</motion.h2>
+                }}>Meet the team</motion.h2>
                 <h5>A team of passionate problem-solvers who think outside the box to provide the best services to our clients.</h5>
                 <div className='expert-slider'>
                     <motion.div whileHover={{ scale: 1.05 }} transition={{

@@ -62,9 +62,9 @@ const Contact = () => {
                 }}>Touch</span></h2><motion.img src={Note} animate={{ rotate: [0, 45, 90, 135, 180, 225, 270, 315, 360] }} transition={{ repeat: Infinity, duration: 2.5 }} className='memo' alt="notepad"></motion.img>
             </div>
 
-            <p className='contact-body'>
+            <h5 className='ebebe'>
                 Our clients reach out to us to support their customer engagement strategies
-            </p>
+            </h5>
 
             <form className='contact-form' onSubmit={onSubmit} action="/Contact.js" method="post">
 

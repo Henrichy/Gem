@@ -22,7 +22,7 @@ const Abouts = () => {
                         Gemini eliminate the need for VAS providers and content owners to maintain multiple physical connections to mobile network operators (MNOs) by proving a single connection point.
                     </p> */}
                 </motion.div>
-                <div className='abouts-page-two'>
+                <div className='abouts-page-thre'>
                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                         x: { type: "spring", stiffness: 60 },
                         opacity: { duration: 1 },
@@ -30,7 +30,7 @@ const Abouts = () => {
                         delay: 0.08,
                         duration: 0.5
                     }} className='aptwo-image'></motion.div>
-                    <div className='aptwo-contents'>
+                    <div className='apthree-contents'>
                         <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{
                             y: { type: "spring", stiffness: 60 },
                             opacity: { duration: 1 },
@@ -38,7 +38,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            <p style={{color:'#083a8f'}}>Easy set up</p>
+                            <p style={{ color: '#083a8f' }}>Easy set up</p>
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
@@ -67,7 +67,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                            <p style={{color:'#083a8f'}}>Reliable software and high delivery rates</p>                        </motion.h3>
+                            <p style={{ color: '#083a8f' }}>Reliable software and high delivery rates</p>                        </motion.h3>
                         <motion.p initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
                             opacity: { duration: 1 },
@@ -95,7 +95,7 @@ const Abouts = () => {
                             delay: 0.08,
                             duration: 0.5
                         }} className='header-sam-three'>
-                           <p style={{color:'#083a8f'}}>Competitive Pricing</p>
+                            <p style={{ color: '#083a8f' }}>Competitive Pricing</p>
                         </motion.h3>
                         <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                             x: { type: "spring", stiffness: 60 },
