@@ -134,9 +134,9 @@ const Careers = () => {
             </div >
 
             <div className='careers-page-three'>
-                <motion.h2 initial={{ scale: 0.05 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }} className='head-five' style={{color:'#083a8f'}}>Open Roles</motion.h2>
+                <motion.h2 initial={{ scale: 0.0001 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }} className='head-five' style={{color:'#083a8f'}}>Open Roles</motion.h2>
                 {errorMessage ? (
-                    <div>{errorMessage}</div>
+                    <motion.div initial={{ scale: 0.0001 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 60, ease: "easeIn", delay: 0.0008, duration: 0.02 }}>{errorMessage}</motion.div>
                 ) : (
                     mockdata !== undefined && mockdata.length > 0 ? (
                         mockdata.map((user, index) => {

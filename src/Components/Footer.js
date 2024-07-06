@@ -36,7 +36,7 @@ const Footer = () => {
                 <div className='rowone-c'>
                     <IoLocationSharp className='io-mai' />
                     <div className='row-content'>
-                        <h3>House 4, a close, off first avenue Gwarimpa, Abuja, Nigeria.</h3>
+                        <h3>House 4, a close, off first avenue Gwarimpa, <strong style={{ fontSize: '1.1em' }}>Abuja, Nigeria.</strong></h3>
 
                     </div>
                 </div>
@@ -53,9 +53,9 @@ const Footer = () => {
                         Let us help you leverage the reach and effectiveness of SMS to achieve your business goals in Nigeria.
                     </p>
                     <div className='rowtwologos'>
-                        <CiFacebook className='facebook' />
-                        <BsTwitterX className='twitter' />
-                        <TiSocialLinkedinCircular className='linkedin' />
+                        <CiFacebook className='facebook' style={{ fontSize: '2em' }} />
+                        <BsTwitterX className='twitter' style={{ fontSize: '2em' }} />
+                        <TiSocialLinkedinCircular className='linkedin' style={{ fontSize: '2em' }} />
                     </div>
                 </div>
                 <div className='rowtwo-b'>
@@ -102,10 +102,19 @@ const Footer = () => {
                         color: "#FFFFFF"
                     }}>SERVICES</h3>
                     <ul className='rowsecondlist'>
-                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Bulk SMS</li>
-                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Value added services (VAS)</li>
-                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Interactive voice response (IVR)</li>
-                        <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> SMS reseller solution</li>
+                       <li> <Link to="/services#bulk-sms" style={{ color: "#ffffff", textDecoration:'none'}}>
+                            <MdKeyboardArrowRight /> Bulk SMS
+                        </Link></li>
+                        <li> <Link to="/services#vas" style={{ color: "#ffffff", textDecoration:'none'}}>
+                            <MdKeyboardArrowRight /> Value added services (VAS)
+                        </Link></li>
+                        <li> <Link to="/services#ivr" style={{ color: "#ffffff", textDecoration:'none'}}>
+                            <MdKeyboardArrowRight /> Interactive voice response (IVR)
+                        </Link></li>
+                        <li> <Link to="/services#srs" style={{ color: "#ffffff", textDecoration:'none'}}>
+                            <MdKeyboardArrowRight /> SMS reseller solution
+                        </Link></li>
+                        
                         {/* <li> <MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Telecom Consulting</li> */}
                     </ul>
                 </div>

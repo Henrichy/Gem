@@ -596,11 +596,12 @@ input[type=email]:focus {
 
 .footer-rowone {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 100%;
-  margin-bottom: 8vh;
+  margin-bottom: 3vh;
 }
 
 .footer-rowtwo {
@@ -713,8 +714,8 @@ input[type=email]:focus {
 }
 
 .rowone-c {
-  width: 43%;
-  max-width: 43%;
+  width: 57%;
+  max-width: 57%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -724,6 +725,7 @@ input[type=email]:focus {
   display: flex;
   flex-direction: column;
   margin-left: 0.5rem;
+  width: 100%;
 }
 
 .footer-hr {
@@ -953,11 +955,10 @@ input[type=email]:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("Assets/back.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/back.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
   z-index: -1;
   /* Ensure the background is behind the content */
 }
@@ -1416,11 +1417,14 @@ input[type=email]:focus {
 }
 
 .hohta {
-  margin-top: 2rem;
-  font-size: 1.75rem;
-
+  margin-top: 1rem;
+  font-size: 1.55rem;
   font-weight: 700;
-  /* color: #ffffff */
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
 }
 
 .home-text p {
@@ -2617,15 +2621,18 @@ input[type=email]:focus {
 
 .service-page-two {
   display: flex;
-  flex-direction: column;
   align-items: left;
   justify-content: flex-start;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 1rem;
-  background-color: #244886;
+  background-color: #083a8f;
   min-height: fit-content;
   padding: 2rem;
+}
+
+.serveimg-two {
+  display: none;
 }
 
 .service-page-four {
@@ -2687,8 +2694,31 @@ input[type=email]:focus {
   margin-right: 3rem;
   min-height: fit-content;
   padding: 2rem;
-  background-color: #d6dbe6ea;
+  background-color: #fff;
   margin-bottom: 1rem;
+}
+
+.shortCodes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.menusclass-two {
+  display: none;
+}
+
+.ussdmenus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ussdmenus-text {
+  width: 70%;
 }
 
 .blog-one-row {
@@ -2955,6 +2985,17 @@ input[type=file] {
     padding-bottom: 1rem;
   }
 
+  .menusclass-two {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .menusclass-one {
+    display: none;
+  }
+
   .home-text h4 {
     font-size: 0.65rem;
     text-align: left !important;
@@ -2998,6 +3039,14 @@ input[type=file] {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.35rem;
+  }
+
+  .shortCodes {
+    justify-content: center;
+  }
+
+  .ussdmenus-text {
+    width: 100%;
   }
 
   .blog-imaje {
@@ -3805,6 +3854,19 @@ input[type=file] {
     min-height: 10vh;
     padding: 1rem 0.5rem;
     margin-top: 0;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    margin-bottom: 0.3rem;
+
+  }
+
+  .serveimg-two {
+    padding: 1rem 1rem;
+    display: block;
+  }
+
+  .serveimg-one {
+    display: none;
   }
 
   .with-blur-backdrops h3 {
@@ -4331,11 +4393,11 @@ input[type=file] {
   }
 
   .hohta {
-    margin-top: 0.5rem;
-    font-size: 1.85rem;
-
-    color: #000000;
+    text-align: left;
+    font-size: 1em;
+    padding: 0;
   }
+
 
   .choose-page h2 {
     color: #244886;
