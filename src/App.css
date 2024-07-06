@@ -362,7 +362,7 @@ nav {
 
   font-size: 1.1rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #000;
   margin-bottom: 1rem
 }
 
@@ -2014,7 +2014,7 @@ input[type=email]:focus {
 }
 
 .serve-list li {
-  color: #ffffff;
+  color: #000;
   font-weight: 400;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
@@ -2621,16 +2621,19 @@ input[type=email]:focus {
 
 .service-page-two {
   display: flex;
-  align-items: left;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 1rem;
-  background-color: #083a8f;
+  background-color: #fff;
   min-height: fit-content;
   padding: 2rem;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
-
+.thebulk{
+  width: 50%;
+}
 .serveimg-two {
   display: none;
 }
@@ -2705,11 +2708,19 @@ input[type=email]:focus {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
-
+.vassa{
+  width: 45%;
+}
+.shortimg{
+  width: 45%;
+}
 .menusclass-two {
   display: none;
 }
-
+.menusclass-one {
+  width: 50%;
+  height: 100%;
+}
 .ussdmenus {
   display: flex;
   justify-content: space-between;
@@ -2718,7 +2729,7 @@ input[type=email]:focus {
 }
 
 .ussdmenus-text {
-  width: 70%;
+  width: 50%;
 }
 
 .blog-one-row {
@@ -2847,7 +2858,7 @@ input[type=file] {
 
   font-size: 1.75rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000;
   margin-bottom: .5rem
 }
 
@@ -2990,6 +3001,7 @@ input[type=file] {
     align-items: center;
     display: flex;
     margin-top: 30px;
+    width: 100%;
   }
 
   .menusclass-one {
@@ -3043,6 +3055,12 @@ input[type=file] {
 
   .shortCodes {
     justify-content: center;
+  }
+  .vassa{
+    width: 100%;
+  }
+  .shortimg{
+    width: 100%;
   }
 
   .ussdmenus-text {
@@ -3854,10 +3872,15 @@ input[type=file] {
     min-height: 10vh;
     padding: 1rem 0.5rem;
     margin-top: 0;
+    align-items: left;
+    text-align: left;
+    justify-content: flex-start;
     padding-bottom: 1rem;
     flex-direction: column;
     margin-bottom: 0.3rem;
-
+  }
+  .thebulk{
+    width: 100%;
   }
 
   .serveimg-two {
@@ -3931,7 +3954,7 @@ input[type=file] {
   .eliminate {
     font-size: 0.6rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #000;
     margin-bottom: 1rem
   }
 
@@ -4286,7 +4309,7 @@ input[type=file] {
   }
 
   .serve-list li {
-    color: #ffffff;
+    color: #000;
     font-weight: 400;
     margin-bottom: 0.35rem;
     font-size: 0.68rem;
