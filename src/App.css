@@ -1038,10 +1038,10 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/prof.jpg");
+  background-image: url("Assets/ease.png");
   background-position: center !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 50vh;
   border-radius: 6px;
 }

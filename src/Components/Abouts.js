@@ -22,7 +22,7 @@ const Abouts = () => {
                         Gemini eliminate the need for VAS providers and content owners to maintain multiple physical connections to mobile network operators (MNOs) by proving a single connection point.
                     </p> */}
                 </motion.div>
-                <div className='abouts-page-thre'>
+                <div className='abouts-page-two'>
                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{
                         x: { type: "spring", stiffness: 60 },
                         opacity: { duration: 1 },
@@ -30,7 +30,7 @@ const Abouts = () => {
                         delay: 0.08,
                         duration: 0.5
                     }} className='aptwo-image'></motion.div>
-                    <div className='apthree-contents'>
+                    <div className='aptwo-contents'>
                         <motion.h3 initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{
                             y: { type: "spring", stiffness: 60 },
                             opacity: { duration: 1 },
