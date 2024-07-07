@@ -3674,7 +3674,11 @@ input[type=file] {
     display: flex;
     justify-content: flex-start;
   }
+  .about-column {
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .row-content {
     display: flex;
     flex-direction: column;
