@@ -7,7 +7,7 @@ import Footer from './Footer';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Trusted from "../Assets/trusted.png";
+import carrergrowt from "../Assets/carrergrowt.png";
 import Learn from "../Assets/learn.png";
 import Skills from "../Assets/skills.png";
 
@@ -75,7 +75,7 @@ const Careers = () => {
             <div className='careers-page-two'>
                 <div className='cpt-side-a'>
 
-                    <h3 className='head-three' style={{color:'#083a8f'}}>Why you Should Join Our Team</h3>
+                    <h3 className='head-three' style={{color:'#083a8f'}}>Why you should join our Team</h3>
                     <p style={{
                       
                         fontSize: ".88rem",
@@ -100,7 +100,7 @@ const Careers = () => {
                             </p>
                         </motion.div>
                         <motion.div whileHover={{ scale: 1.03 }} className='cpt-bone-two'>
-                            <img className='team-work' src={Trusted} alt="teamwork"></img>
+                            <img className='team-work' src={carrergrowt} alt="teamwork"></img>
                             <h4 className='head-four' style={{color:'#083a8f'}}>
                                 Career Growth
                             </h4>

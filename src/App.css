@@ -1039,19 +1039,29 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/ease.png");
+  background-image: url("Assets/easyset.png");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 50vh;
   border-radius: 6px;
 }
-
+.getInit-h3{
+font-size: 1.7em;
+font-weight: 600;
+padding-left: 1.2em;
+padding-right: 1.2em;
+text-align: center;
+}
+.getInit-h2{
+  font-size: 2.4em;
+  font-weight: 700;
+  }
 .aptfour-image {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/support-service.png");
+  background-image: url("Assets/competitive.png");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1063,7 +1073,7 @@ input[type=email]:focus {
   font-size: 1.13rem;
   color: #001833;
   margin-bottom: 1rem;
-  padding-left: 0.75rem;
+  /*padding-left: 0.75rem;*/
   font-weight: 800
 }
 
@@ -1071,7 +1081,7 @@ input[type=email]:focus {
   width: 47%;
   max-width: 50%;
   background-color: #ffffff;
-  background-image: url("Assets/pro.jpg");
+  background-image: url("Assets/deliveryrate.jpg");
   background-position: center !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1643,7 +1653,7 @@ input[type=email]:focus {
 
   color: #001833;
   margin-bottom: 1rem;
-  padding-left: 0.75rem
+  /*padding-left: 0.75rem;*/
 }
 
 .overlay-body {
@@ -2660,8 +2670,8 @@ input[type=email]:focus {
 
 .service-header-two {
 
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 0;
 }
 
@@ -4283,6 +4293,14 @@ input[type=file] {
     color: #000000;
     margin-bottom: 1.05rem;
   }
+  .getInit-h3{
+    font-size: 1em;
+
+    }
+    .getInit-h2{
+      font-size: 1.1em;
+      color:#244886;
+      }
 
   .career-form {
     margin-left: 0rem;

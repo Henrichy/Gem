@@ -5,6 +5,7 @@ import Note from "../Assets/memo.png";
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import fail from "../Assets/failed.png";
+import getinit from "../Assets/getinit.png";
 import axios from 'axios';
 import Failed from "./Failed";
 import SimpleBackdrop from './SimpleBackdrop';
@@ -56,6 +57,11 @@ const Contact = () => {
 
     return (
         <div className='contact-contents'>
+            <h2 className='getInit-h2'>Innovation thrives on collaboration</h2>
+            <h3 className='getInit-h3'>Whether it is VAS or SMS, we're open to your ideas – tell us your vision, and we'll work with you to make it happen</h3>
+            <div>
+                <img src={getinit} alt='getinit' />
+            </div>
             <div style={{ display: "flex", alignItems: 'center', justifyContent: 'center' }}>
                 <h2>Get In <span style={{
                     color: "#244886"

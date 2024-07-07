@@ -41,6 +41,7 @@ const Service = () => {
                 delay: 0.0008,
                 duration: 1.2
             }} className='service-page-two' id="bulk-sms">
+                <div className='shortCodes'>
                 <div className='thebulk'>
                     <h3 className='vas'>Bulk SMS</h3>
                     <h4 className='eliminate'>Send targeted text messages to large groups instantly with our promotional and transactional bulk SMS service.</h4>
@@ -53,6 +54,7 @@ const Service = () => {
                 </div>
                 <div style={{ width: '40%', }} >
                     <img className='serveimg-one'src={bulker} alt='' />
+                </div>
                 </div>
             </motion.div>
             <motion.div initial={{ y: -100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{
@@ -110,13 +112,13 @@ const Service = () => {
             }} className='service-page-two' id='ivr'>
                 <div className='ussdmenus'>
                 <div className='ussdmenus-text'>
-                <h3 className='vas'>Interactive Voice Response (IVR):</h3>
+                <h3 className='vas'>Interactive Voice Response (IVR)</h3>
                 <h4 className='eliminate'
                 > Develop<strong> automated phone systems</strong> that guide callers through self-service options or connect them to the right department:
                 </h4>
                 <ul className='serve-list'>
-                    <li><MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Enhance customer service efficiency</li>
-                    <li><MdKeyboardArrowRight style={{ color: "#ffffff" }} /> Reduce call centre workload</li>
+                    <li><MdKeyboardArrowRight style={{ color: "#000" }} /> Enhance customer service efficiency</li>
+                    <li><MdKeyboardArrowRight style={{ color: "#000" }} /> Reduce call centre workload</li>
                 </ul>
                 </div>
                 <img className='menusclass-one' style={{}} src={ussdmenus} alt=''/>
