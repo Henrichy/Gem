@@ -57,7 +57,7 @@ const Contact = () => {
 
     return (
         <div className='contact-contents'>
-            <h2 className='getInit-h2'>Innovation thrives on collaboration</h2>
+            <h3 className='getInit'>Innovation thrives on collaboration</h3>
             <h3 className='getInit-h3'>Whether it is VAS or SMS, we're open to your ideas – tell us your vision, and we'll work with you to make it happen</h3>
             <div>
                 <img src={getinit} alt='getinit' />

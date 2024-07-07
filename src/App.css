@@ -1053,9 +1053,10 @@ padding-left: 1.2em;
 padding-right: 1.2em;
 text-align: center;
 }
-.getInit-h2{
+.getInit{
   font-size: 2.4em;
   font-weight: 700;
+  color: #244886;
   }
 .aptfour-image {
   width: 47%;
@@ -4297,7 +4298,7 @@ input[type=file] {
     font-size: 1em;
 
     }
-    .getInit-h2{
+    .getInit{
       font-size: 1.1em;
       color:#244886;
       }
