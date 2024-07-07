@@ -1046,15 +1046,15 @@ input[type=email]:focus {
   min-height: 50vh;
   border-radius: 6px;
 }
-.getInit-h3{
+.getInitt{
 font-size: 1.7em;
 font-weight: 600;
-padding-left: 1.2em;
-padding-right: 1.2em;
+margin-left: 4rem;
+margin-right: 4em;
 text-align: center;
 }
 .getInit{
-  font-size: 2.4em;
+  font-size: 2.6em;
   font-weight: 700;
   color: #244886;
   }
@@ -1266,6 +1266,7 @@ text-align: center;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .service-three {
@@ -1280,6 +1281,7 @@ text-align: center;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 
@@ -2800,7 +2802,7 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .about-column {
@@ -3186,6 +3188,7 @@ input[type=file] {
   .abt {
     font-size: 1rem;
     margin-top: 0.5rem;
+
   }
 
   .about-list {
@@ -3251,10 +3254,11 @@ input[type=file] {
   }
 
   .about-image {
-    min-height: 20rem;
+    min-height: 10rem;
     width: 90%;
     max-width: 100%;
     margin-top: 1rem;
+    height: auto;
   }
 
   .footer-rowtwo {
@@ -4294,7 +4298,7 @@ input[type=file] {
     color: #000000;
     margin-bottom: 1.05rem;
   }
-  .getInit-h3{
+  .getInitt{
     font-size: 1em;
 
     }
