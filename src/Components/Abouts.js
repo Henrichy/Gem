@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Contact from './Contact';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
+import getinit from "../Assets/getinit.png";
 
 const Abouts = () => {
     return (
@@ -108,7 +109,10 @@ const Abouts = () => {
                         </motion.p>
                     </div>
                 </div>
-                <div className='abouts-blank'>
+                <h3 className='getInit'>Innovation thrives on collaboration</h3>
+                <p className='getInitt'>Whether it is VAS or SMS, we're open to your ideas – tell us your vision, and we'll work with you to make it happen</p>
+                <div>
+                    <img src={getinit} alt='getinit' />
                 </div>
 
             </div>
