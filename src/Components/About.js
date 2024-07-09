@@ -49,7 +49,7 @@ const About = () => {
             <p className='abt'>Our platform features extend beyond that of a regular VAS and SMS gateway to provide the following extensive services:
             </p>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', width: "80%" }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%" }}>
                 <ul className='about-list'>
                     <li> <HiOutlinePlus className='outline-plus' />SMPP Server</li>
                     <li> <HiOutlinePlus className='outline-plus' />HTTP API</li>

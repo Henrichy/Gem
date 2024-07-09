@@ -864,18 +864,18 @@ input[type=email]:focus {
   text-align: left;
   margin-bottom: 0;
 }
-
 .about-image {
-  min-height: 40vh;
-  width: 47%;
+  min-height: 60vh;
+  width: 100%;
   max-width: 50%;
-  background-color: #F7F6F7;
   background-image: url("Assets/sent.png");
-  background-position: top !important;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; /* Ensure the entire image is shown */
   margin-top: 1.2rem;
 }
+
+
 
 .location-dot {
   margin-right: 0.5rem;
@@ -908,6 +908,8 @@ input[type=email]:focus {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .about-list {
@@ -2801,7 +2803,7 @@ text-align: center;
   padding-top: 3rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -2812,6 +2814,7 @@ text-align: center;
   background-color: #F7F6F7;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+
 }
 
 input[type=file] {
@@ -3254,8 +3257,8 @@ input[type=file] {
   }
 
   .about-image {
-    min-height: 10rem;
-    width: 90%;
+    min-height: 15rem;
+    width: 100%;
     max-width: 100%;
     margin-top: 1rem;
     height: auto;
